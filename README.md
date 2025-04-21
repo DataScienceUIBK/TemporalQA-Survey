@@ -23,8 +23,8 @@
 ---
 
 ## Temporal IR – Query & Ranking
-| Year | Title & Link |
-|------|--------------|
+| Year | Title & Link | Citation key |
+|------|--------------|--------------|
 | 2009 | **Time Will Tell: Leveraging Temporal Expressions in IR** – Arikan *et al.* |
 | 2009 | **Improving Search Relevance for Implicitly Temporal Queries** – Metzler *et al.* |
 | 2010 | **A Language‑Model Approach for Temporal Information Needs** – Berberich *et al.* |
@@ -37,8 +37,8 @@
 ---
 
 ## Document Dating & Event‑Time Estimation
-| Year | Title & Link |
-|------|--------------|
+| Year | Title & Link | Citation key |
+|------|--------------|--------------|
 | 2021 | **Event Occurrence Date Estimation via Multivariate Time‑Series** – Wang *et al.* |
 | 2018 | **Leveraging Linked Entities to Estimate Focus Time of Short Texts** – Morbidoni *et al.* |
 | 2017 | **Estimating Event Focus Time Using Neural Word Embeddings** – Das *et al.* |
@@ -66,8 +66,8 @@
 ---
 
 ## Temporal QA – Models & Methods
-| Year | Title & Link |
-|------|--------------|
+| Year | Title & Link | Citation key |
+|------|--------------|--------------|
 | 2024 | **Continual Learning for Temporal‑Sensitive QA** – Yang *et al.* (IJCNN) |
 | 2024 | **Enhancing Temporal Sensitivity & Reasoning for Time‑Sensitive QA** – Yang *et al.* [[ACL]](https://aclanthology.org/2024.findings-emnlp.848/) |
 | 2023 | **Benchmarking & Improving Temporal Reasoning of LLMs** – Tan *et al.* [[ACL]](https://aclanthology.org/2023.acl-long.828/) |
@@ -80,8 +80,8 @@
 ---
 
 ## Temporal Language Models & Representation Learning
-| Year | Title & Link |
-|------|--------------|
+| Year | Title & Link | Citation key |
+|------|--------------|--------------|
 | 2024 | **Time‑Sensitive Knowledge Editing via Efficient Finetuning** – Ge *et al.* [[ACL]](https://aclanthology.org/2024.acl-short.53/) |
 | 2023 | **Efficient Continue‑Training of Temporal LMs with Structural Info** – Su *et al.* [[ACL]](https://aclanthology.org/2023.findings-emnlp.418/) |
 | 2023 | **Salient Span Masking for Temporal Understanding** – Cole *et al.* [[ACL]](https://aclanthology.org/2023.eacl-main.222/) |
