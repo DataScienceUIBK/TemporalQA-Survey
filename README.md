@@ -1,5 +1,118 @@
-# TemporalQA-Survey
+<h1 align="center">
+  <img src="images/hourglass.png" alt="Logo" width="55" style="vertical-align: middle; margin-right: 10px; position: relative; top: 8px;">
+  It's High Time: A Survey of Temporal Question Answering
+</h1>
+
+
+<p align="center">
+  <strong>Bhawna Piryani</strong> · Abdelrahman Abdallah · Jamshid Mozafari · Avishek Anand · Adam Jatowt  
+  <br>
+  <em>University of Innsbruck · TU Delft</em>
+  <br><br>
+  📄 <a href="https://arxiv.org/abs/2505.20243v3">Read the Paper on arXiv</a> &nbsp;|&nbsp; 🗓️ <strong>2025</strong>
+</p>
+
 ---
+
+### 📘 Overview
+
+This repository accompanies our paper  on *Temporal Question Answering (TQA)* — exploring how AI models reason about time, adapt to evolving knowledge, and answer temporally constrained questions.
+
+<p align="center">
+  <img src="images/TemporalSurveyFigure.png" alt="Temporal QA Taxonomy" width="700">
+</p>
+
+---
+
+## ❤️ Recap
+
+We present a comprehensive **survey of Temporal Question Answering (TQA)** — a field that studies how AI systems reason about *when* events happen, adapt to evolving knowledge, and answer **time-sensitive or time-dependent questions**.
+
+We organize the literature along three major research pillars:
+
+- **Temporal Representation and Understanding** — detecting and normalizing time expressions, estimating event and document focus time.  
+- **Temporal Modeling and Reasoning** — temporal language models (TLMs) and retrieval-augmented generation (RAG) approaches for reasoning over time.  
+- **Temporal Evaluation and Robustness** — datasets, benchmarks, and metrics assessing temporal consistency, recency awareness, and reasoning reliability.
+
+<p align="center">
+  <img src="images/TemporalSurveyFigure.png" alt="Temporal QA Taxonomy" width="700"><br>
+  <em>Taxonomy of Temporal QA: datasets, benchmarks, and approaches</em>
+</p>
+
+---
+
+## 🚀 Table of Contents
+
+- [Overview](#overview)
+- [1️⃣ Temporal Foundations](#1️⃣-temporal-foundations)
+  - [1.1 Temporal Information Retrieval (TIR)](#11-temporal-information-retrieval-tir)
+  - [1.2 Temporal Question Answering (TQA)](#12-temporal-question-answering-tqa)
+- [2️⃣ Datasets and Benchmarks](#2️⃣-datasets-and-benchmarks)
+  - [2.1 Diachronic & Synchronic Corpora](#21-diachronic--synchronic-corpora)
+  - [2.2 Temporal QA Datasets](#22-temporal-qa-datasets)
+- [3️⃣ Methods and Models](#3️⃣-methods-and-models)
+  - [3.1 Temporal Language Models](#31-temporal-language-models)
+  - [3.2 Temporal Retrieval-Augmented Generation (RAG)](#32-temporal-retrieval-augmented-generation-rag)
+  - [3.3 Temporal Reasoning Capabilities](#33-temporal-reasoning-capabilities)
+- [4️⃣ Future Directions](#4️⃣-future-directions)
+- [📚 Citation](#-citation)
+- [🪪 License](#-license)
+
+---
+
+## Overview
+
+Temporal QA focuses on systems that can **understand, retrieve, and reason over time-dependent information**.  
+This includes interpreting vague expressions like “recently” or “after the war,” resolving temporal ambiguity, and aligning retrieved evidence with a question’s time frame.
+
+---
+
+## 1️⃣ Temporal Foundations
+
+### 1.1 Temporal Information Retrieval (TIR)
+Time-aware retrieval aims to identify documents that are not only topically relevant but also **temporally aligned** with the query’s intent — e.g., “latest Apple earnings” or “climate policy in 2015.”
+
+### 1.2 Temporal Question Answering (TQA)
+Goes beyond retrieval by requiring reasoning over **temporal constraints**, such as ordering events or computing intervals (e.g., “At what age did Obama win the Nobel Peace Prize?” → 48 years).
+
+---
+
+## 2️⃣ Datasets and Benchmarks
+
+### 2.1 Diachronic & Synchronic Corpora
+- **Diachronic**: Long-term archives (e.g., *NYT*, *Chronicling America*) capturing event evolution.  
+- **Synchronic**: Snapshot datasets (e.g., *Wikipedia dumps*) reflecting world knowledge at a fixed time.
+
+### 2.2 Temporal QA Datasets
+Key datasets include **TimeQA**, **ArchivalQA**, **TempLAMA**, and **ComplexTempQA**, covering both explicit and implicit temporal reasoning.
+
+---
+
+## 3️⃣ Methods and Models
+
+### 3.1 Temporal Language Models
+Models such as **TempoT5**, **TempoBERT**, and **BiTimeBERT** incorporate timestamps or temporal cues directly into their architecture for better time-aware representations.
+
+### 3.2 Temporal Retrieval-Augmented Generation (RAG)
+Approaches like **TempRetriever** and **TempRALM** integrate neural retrieval with generative reasoning to dynamically incorporate up-to-date evidence.
+
+### 3.3 Temporal Reasoning Capabilities
+Beyond modeling, recent works explore **event ordering**, **duration estimation**, and **temporal robustness** — testing whether LLMs can reason consistently over time.
+
+---
+
+## 4️⃣ Future Directions
+
+We highlight open challenges for building truly time-aware systems:
+- Dynamic temporal knowledge management  
+- Diachronic–synchronic integration  
+- Temporal uncertainty and confidence modeling  
+- Multilingual and multimodal temporal reasoning  
+- Implicit temporal intent detection  
+
+---
+
+
 
 ## Table of Contents
 1. [Surveys & Tutorials](#surveys--tutorials)
@@ -95,3 +208,21 @@
 | 2019 | **Neural Temporality Adaptation for Document Classification** – Huang & Paul [[ACL]](https://aclanthology.org/P19-1403/) |
 
 ---
+
+## 🪪License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## ✨Citation
+If you find this work useful, please cite [📜our paper](https://arxiv.org/pdf/2505.20243):
+### Plain
+Piryani, B., Abdullah, A., Mozafari, J., Anand, A., & Jatowt, A. (2025). It's High Time: A Survey of Temporal Question Answering. arXiv preprint arXiv:2505.20243.
+### Bibtex
+```bibtex
+@article{piryani2025s,
+  title={It's High Time: A Survey of Temporal Question Answering},
+  author={Piryani, Bhawna and Abdullah, Abdelrahman and Mozafari, Jamshid and Anand, Avishek and Jatowt, Adam},
+  journal={arXiv preprint arXiv:2505.20243},
+  year={2025}
+}
+
+```
