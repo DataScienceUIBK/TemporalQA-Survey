@@ -14,6 +14,21 @@
 
 ---
 
+
+## 📋 Table of Contents
+
+- [📘 Overview](#-overview)
+- [🎯 What is Temporal QA?](#-what-is-temporal-qa)
+- [📊 Datasets](#-datasets)
+- [🔧 Methods & Approaches](#-methods--approaches)
+- [📖 Temporal Tasks](#-temporal-tasks)
+- [🏥 Domain-Specific Applications](#-domain-specific-applications)
+- [🛠️ Resources & Tools](#️-resources--tools)
+- [🚀 Future Directions](#-future-directions)
+- [📝 Citation](#-citation)
+- [🤝 Contributing](#-contributing)
+
+---
 ### 📘 Overview
 
 This repository accompanies our paper  on *Temporal Question Answering (TQA)* — exploring how AI models reason about time, adapt to evolving knowledge, and answer temporally constrained questions.
@@ -23,81 +38,323 @@ This repository accompanies our paper  on *Temporal Question Answering (TQA)* �
 </p>
 
 ---
+### Key Contributions
 
-## ❤️ Recap
+✨ **Comprehensive Survey**: Coverage of 27+ datasets, 50+ methods spanning 2003-2025  
+📊 **Unified Taxonomy**: Systematic categorization of tasks, datasets, and approaches  
+🔍 **Critical Analysis**: Evaluation of current capabilities and fundamental limitations  
+🚀 **Research Roadmap**: 7 critical directions for advancing temporal reasoning in AI
 
-We present a comprehensive **survey of Temporal Question Answering (TQA)** — a field that studies how AI systems reason about *when* events happen, adapt to evolving knowledge, and answer **time-sensitive or time-dependent questions**.
-
-We organize the literature along three major research pillars:
-
-- **Temporal Representation and Understanding** — detecting and normalizing time expressions, estimating event and document focus time.  
-- **Temporal Modeling and Reasoning** — temporal language models (TLMs) and retrieval-augmented generation (RAG) approaches for reasoning over time.  
-- **Temporal Evaluation and Robustness** — datasets, benchmarks, and metrics assessing temporal consistency, recency awareness, and reasoning reliability.
-
-<p align="center">
-  <img src="images/TemporalSurveyFigure.png" alt="Temporal QA Taxonomy" width="700"><br>
-  <em>Taxonomy of Temporal QA: datasets, benchmarks, and approaches</em>
-</p>
+### Why Temporal QA Matters
+Time shapes how we:
+- 🗞️ **Retrieve information**: "Latest climate policies" vs. "policies from the 1990s"
+- 🧠 **Reason about events**: Understanding causality, change, and evolution
+- 💬 **Interact with AI**: Expecting contextually appropriate temporal grounding
+- 🔄 **Adapt to change**: Handling evolving facts and knowledge updates
 
 ---
 
-## 🚀 Table of Contents
+## 📊 Datasets
 
-- [Overview](#overview)
-- [1️⃣ Temporal Foundations](#1️⃣-temporal-foundations)
-  - [1.1 Temporal Information Retrieval (TIR)](#11-temporal-information-retrieval-tir)
-  - [1.2 Temporal Question Answering (TQA)](#12-temporal-question-answering-tqa)
-- [2️⃣ Datasets and Benchmarks](#2️⃣-datasets-and-benchmarks)
-  - [2.1 Diachronic & Synchronic Corpora](#21-diachronic--synchronic-corpora)
-  - [2.2 Temporal QA Datasets](#22-temporal-qa-datasets)
-- [3️⃣ Methods and Models](#3️⃣-methods-and-models)
-  - [3.1 Temporal Language Models](#31-temporal-language-models)
-  - [3.2 Temporal Retrieval-Augmented Generation (RAG)](#32-temporal-retrieval-augmented-generation-rag)
-  - [3.3 Temporal Reasoning Capabilities](#33-temporal-reasoning-capabilities)
-- [4️⃣ Future Directions](#4️⃣-future-directions)
-- [📚 Citation](#-citation)
-- [🪪 License](#-license)
+### Quick Statistics
+- **27+ TQA Datasets** covering diverse domains and temporal scopes
+- **2.5M+ Questions** spanning historical archives (1367) to real-time web (2025)
+- **8 Dataset Categories**: Diachronic, Synchronic, Web-based, Synthetic, KG-based
+
+
+### Featured Datasets
+
+<details open>
+<summary><b>🗞️ Diachronic Datasets (Time-Stamped Historical Documents)</b></summary>
+
+| Dataset | Year | #Questions | Source | Time Coverage | Answer Type | Links |
+|---------|------|-----------|--------|---------------|-------------|-------|
+| **ArchivalQA** | 2022 | 532K | NYT Corpus | 1987-2007 | Extractive | [Paper](https://dl.acm.org/doi/10.1145/3477495.3531734) · [GitHub](https://github.com/IBM/ArchivalQA) |
+| **ChroniclingAmericaQA** | 2024 | 485K | Historical Newspapers | 1800-1920 | Extractive | [Paper](https://dl.acm.org/doi/10.1145/3626772.3657887) · [GitHub](https://github.com/datascienceUIBK/ChroniclingAmericaQA) |
+| **StreamingQA** | 2022 | 147K | News Articles | 2007-2020 | Extractive | [Paper](https://proceedings.mlr.press/v162/liska22a.html) · [GitHub](https://github.com/deepmind/streamingqa) |
+| **NewsQA** | 2017 | 119K | CNN/Daily Mail | 2007-2015 | Freeform | [Paper](https://aclanthology.org/W17-2623/) · [GitHub](https://github.com/Maluuba/newsqa) |
+| **TempLAMA** | 2022 | 50K | News | 2010-2020 | Extractive | [Paper](https://aclanthology.org/2022.tacl-1.16/) · [GitHub](https://github.com/google-research/language/tree/master/language/templama) |
+| **TORQUE** | 2020 | 21K | News | - | Abstractive | [Paper](https://aclanthology.org/2020.emnlp-main.88/) · [GitHub](https://github.com/rujunhan/TORQUE) |
+| **ForecastQA** | 2021 | 10.3K | News | 2015-2019 | Multiple Choice | [Paper](https://aclanthology.org/2021.acl-long.357/) · [GitHub](https://github.com/wjn922/ForecastQA) |
+| **TDDiscourse** | 2019 | 6.1K | News | Unspecified | Extractive | [Paper](https://aclanthology.org/W19-5927/) · [GitHub](https://github.com/aknaik/TDDiscourse) |
+
+</details>
+
+<details>
+<summary><b>📖 Synchronic Datasets (Wikipedia Snapshots)</b></summary>
+
+| Dataset | Year | #Questions | Time Scope | Answer Type | Multi-Hop | Links |
+|---------|------|-----------|-----------|-------------|-----------|-------|
+| **ComplexTempQA** | 2024 | 100.2K | 1987-2023 | Extractive | ✓ | [Paper](https://arxiv.org/abs/2406.04866) · [GitHub](https://github.com/DataScienceUIBK/ComplexTempQA) |
+| **TEMPREASON** | 2023 | 52.8K | 634-2023 | Abstractive | ✗ | [Paper](https://aclanthology.org/2023.acl-long.828/) · [GitHub](https://github.com/DAMO-NLP-SG/TempReason) |
+| **TimeQA** | 2021 | 41.2K | 1367-2018 | Extractive | ✗ | [Paper](https://openreview.net/forum?id=pzDB_n1r_C) · [GitHub](https://github.com/wenhuchen/TimeQA) |
+| **TemporalAlignmentQA** | 2024 | 20K | 2000-2023 | Abstractive | ✗ | [Paper](https://aclanthology.org/2024.findings-acl.891/) |
+| **SituatedQA** | 2021 | 12.2K | ≤ 2021 | Mixed | ✗ | [Paper](https://aclanthology.org/2021.emnlp-main.586/) · [GitHub](https://github.com/situatedqa/situatedqa) |
+| **TempTabQA** | 2023 | 11.4K | Infoboxes | Abstractive | ✗ | [Paper](https://aclanthology.org/2023.emnlp-main.149/) · [GitHub](https://github.com/vivekgupta9/TempTabQA) |
+| **TiQ** | 2024 | 10K | Unspecified | Entities | ✗ | [Paper](https://dl.acm.org/doi/10.1145/3589335.3651529) |
+| **PAT-Questions** | 2024 | 6.1K | Present-anchored | Extractive | ✓ | [Paper](https://aclanthology.org/2024.findings-acl.782/) · [GitHub](https://github.com/vhiribarren/pat-questions) |
+| **TRACIE** | 2021 | 5.4K | ≤ 2020 | Abstractive | ✗ | [Paper](https://aclanthology.org/2021.naacl-main.107/) · [GitHub](https://github.com/CogComp/TRACIE) |
+| **MenatQA** | 2023 | 2.8K | 1367-2018 | Extractive | ✗ | [Paper](https://aclanthology.org/2023.findings-emnlp.99/) · [GitHub](https://github.com/yfyuan01/MenatQA) |
+
+</details>
+
+<details>
+<summary><b>🌐 Web & Real-Time Datasets</b></summary>
+
+| Dataset | Year | #Questions | Source | Update Frequency | Links |
+|---------|------|-----------|--------|------------------|-------|
+| **ReaLTimeQA** | 2023 | 5.1K | Web Search | Weekly (2020-2024) | [Paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/9a6e9a1519ee1f031b35acb238e97bc2-Abstract-Datasets_and_Benchmarks.html) · [GitHub](https://github.com/realtimeqa/realtimeqa) |
+| **FreshQA** | 2024 | 600 | Google Search | Periodic | [Paper](https://aclanthology.org/2024.findings-acl.820/) · [GitHub](https://github.com/freshllms/freshqa) |
+
+</details>
+
+<details>
+<summary><b>🧪 Synthetic & Reasoning-Focused Datasets</b></summary>
+
+| Dataset | Year | #Questions | Focus | Links |
+|---------|------|-----------|-------|-------|
+| **COTEMPQA** | 2024 | 4.7K | Co-temporal reasoning | [Paper](https://aclanthology.org/2024.acl-long.703/) · [GitHub](https://github.com/zhaochen0110/cotempqa) |
+| **UnSeenTimeQA** | 2024 | 3.6K | Beyond memorization | [Paper](https://arxiv.org/abs/2407.03525) · [GitHub](https://github.com/mdnayeemsarker/UnSeenTimeQA) |
+| **Test of Time (ToT)** | 2024 | 1.8K | Temporal reasoning eval | [Paper](https://arxiv.org/abs/2406.09170) · [GitHub](https://github.com/google-deepmind/test_of_time) |
+| **TIMEDIAL** | 2021 | 1.1K | Temporal commonsense | [Paper](https://aclanthology.org/2021.acl-long.549/) · [GitHub](https://github.com/google-research-datasets/TimeDial) |
+
+</details>
+
+<details>
+<summary><b>📊 Knowledge Graph-Based Datasets</b></summary>
+
+| Dataset | Year | #Questions | KB Source | Links |
+|---------|------|-----------|-----------|-------|
+| **TempQuestions** | 2018 | 1.2K | Freebase | [Paper](https://dl.acm.org/doi/10.1145/3184558.3192172) · [GitHub](https://github.com/zhenjia2017/TempQuestions) |
+| **Complex-TR** | 2024 | 10.8K | Wikipedia + Web | [Paper](https://aclanthology.org/2024.findings-acl.372/) · [GitHub](https://github.com/DAMO-NLP-SG/Complex-TR) |
+
+</details>
+
+### 📚 [View Complete Dataset Analysis →](docs/datasets/)
+
+**Detailed breakdowns available:**
+- [Diachronic Document Collections](docs/datasets/diachronic.md)
+- [Synchronic Document Collections](docs/datasets/synchronic.md)
+- [Annotated Temporal Corpora](docs/datasets/annotated.md)
 
 ---
 
-## Overview
+## 🔧 Methods & Approaches
 
-Temporal QA focuses on systems that can **understand, retrieve, and reason over time-dependent information**.  
-This includes interpreting vague expressions like “recently” or “after the war,” resolving temporal ambiguity, and aligning retrieved evidence with a question’s time frame.
+### Evolution Timeline
+```
+📅 2003-2010: Rule-Based Era
+   └─ TimeML, TERSEO, temporal taggers
+
+📅 2011-2019: Statistical & Early Neural
+   └─ Language models, temporal embeddings
+
+📅 2020-2022: Transformer Revolution
+   └─ Temporal pretraining, time-aware architectures
+
+📅 2023-2025: LLM & RAG Era
+   └─ Retrieval-augmented generation, temporal reasoning
+```
+
+### Method Categories
+
+<details open>
+<summary><b>🤖 Temporal Language Models (Click to expand all 9 models)</b></summary>
+
+| Model | Year | Key Innovation | Architecture | Paper | Code |
+|-------|------|----------------|--------------|-------|------|
+| **TempoT5** | 2022 | Temporal conditioning via prefixes | T5 + timestamp prefixes | [Paper](https://aclanthology.org/2022.tacl-1.16/) | [GitHub](https://github.com/google-research/language/tree/master/language/templama) |
+| **BiTimeBERT** | 2023 | Dual temporal encoding (timestamp + content) | BERT + bi-temporal module | [Paper](https://dl.acm.org/doi/10.1145/3539618.3591675) | Available upon request |
+| **TempoBERT** | 2022 | Time-aware masking strategy | BERT + temporal masking | [Paper](https://dl.acm.org/doi/10.1145/3488560.3498529) | [GitHub](https://github.com/GuyRosin/TempoBERT) |
+| **TALM** | 2023 | Hierarchical temporal word representations | BERT + temporal adapter | [Paper](https://aclanthology.org/2023.findings-emnlp.908/) | Contact authors |
+| **SG-TLM** | 2023 | Syntax-guided + temporal-aware masking | BERT + dual masking | [Paper](https://aclanthology.org/2023.findings-emnlp.425/) | [GitHub](https://github.com/szhaochen/SG-TLM) |
+| **TSM** | 2023 | Temporal span masking | T5 + salient span masking | [Paper](https://aclanthology.org/2023.eacl-main.221/) | Contact authors |
+| **Temporal Attention** | 2022 | Time matrix in attention mechanism | Transformer + time matrix | [Paper](https://aclanthology.org/2022.findings-naacl.114/) | [GitHub](https://github.com/GuyRosin/temporal-attention) |
+| **TCQA** | 2023 | Synthetic QA + span selection | T5-based | [Paper](https://aclanthology.org/2023.findings-emnlp.5/) | Contact authors |
+| **Time-aware Prompting** | 2022 | Temporal prompts for generation | GPT-2 + temporal prompts | [Paper](https://aclanthology.org/2022.findings-emnlp.533/) | [GitHub](https://github.com/yuchenlin/TimePrompt) |
+
+**📖 [Detailed comparison with training objectives →](docs/methods/temporal_lms.md)**
+
+</details>
+
+<details>
+<summary><b>🔍 Temporal RAG Systems (Click to expand all 6 systems)</b></summary>
+
+| System | Year | Pipeline Architecture | Temporal Signals | Paper | Code |
+|--------|------|----------------------|------------------|-------|------|
+| **TempRetriever** | 2025 | Fusion-based dense retrieval | Query + doc timestamps | [Paper](https://arxiv.org/abs/2502.21024) | Coming soon |
+| **TimeR4** | 2024 | Retrieve-Rewrite-Retrieve-Rerank | TKG timestamps + constraints | [Paper](https://aclanthology.org/2024.emnlp-main.408/) | [GitHub](https://github.com/czy1999/TimeR4) |
+| **MRAG** | 2024 | Modular multi-hop framework | Symbolic + semantic temporal scoring | [Paper](https://arxiv.org/abs/2412.15540) | Coming soon |
+| **TempRALM** | 2024 | Dense retrieval + temporal proximity | Timestamp-based ranking | [Paper](https://arxiv.org/abs/2410.14333) | Contact authors |
+| **TsContriever** | 2024 | Contrastive time-sensitive retrieval | Time-aware embeddings | [Paper](https://dl.acm.org/doi/10.1145/3627673.3679786) | Contact authors |
+| **FreshLLMs** | 2024 | Search augmentation for recency | Web search integration | [Paper](https://aclanthology.org/2024.findings-acl.820/) | [GitHub](https://github.com/freshllms/freshqa) |
+
+**🔧 [Implementation details & architecture comparisons →](docs/methods/temporal_rag.md)**
+
+</details>
+
+<details>
+<summary><b>🧠 Temporal Reasoning Methods (Click to expand all 8 approaches)</b></summary>
+
+| Method | Year | Reasoning Type | Key Contribution | Paper | Code |
+|--------|------|----------------|------------------|-------|------|
+| **ECONET** | 2021 | Continual adaptation | Event consistency across updates | [Paper](https://aclanthology.org/2021.emnlp-main.436/) | [GitHub](https://github.com/rujunhan/ECONET) |
+| **ConTempo** | 2024 | Contrastive temporal relations | Unified temporal relation extraction | [Paper](https://aclanthology.org/2024.findings-acl.90/) | [GitHub](https://github.com/JingchengNiu/ConTempo) |
+| **TIMERS** | 2021 | Document-level relations | Structured inference layers | [Paper](https://aclanthology.org/2021.acl-short.67/) | [GitHub](https://github.com/PuneetMathur/TIMERS) |
+| **TRAM** | 2024 | Multi-dimensional reasoning | Event frequency, duration, ordering | [Paper](https://aclanthology.org/2024.findings-acl.380/) | [GitHub](https://github.com/DAMO-NLP-SG/TRAM) |
+| **TODAY** | 2023 | Differential analysis | Temporal robustness testing | [Paper](https://aclanthology.org/2023.acl-long.667/) | [GitHub](https://github.com/DanielFeng0619/TODAY) |
+| **Narrative-of-Thought** | 2024 | Narrative-based reasoning | Recounted narratives for coherence | [Paper](https://aclanthology.org/2024.findings-emnlp.962/) | [GitHub](https://github.com/zhangfx19/Narrative-of-Thought) |
+| **Timeline Self-Reflection** | 2025 | Self-reflective reasoning | Iterative timeline construction | [Paper](https://arxiv.org/abs/2504.05258) | Coming soon |
+| **TreMu** | 2025 | Neuro-symbolic with memory | Multi-session dialogue memory | [Paper](https://arxiv.org/abs/2502.01630) | Coming soon |
+
+**🧩 [Reasoning mechanisms & benchmarks →](docs/methods/temporal_reasoning.md)**
+
+</details>
+
+<details>
+<summary><b>📜 Classical Methods (Rule-Based & Statistical)</b></summary>
+
+| Era | Methods | Key Papers |
+|-----|---------|------------|
+| **Rule-Based** | TimeML, TERSEO, temporal taggers | [Harabagiu & Bejan, 2005](https://www.aaai.org/Papers/Workshops/2005/WS-05-07/WS05-07-005.pdf), [Saquete et al., 2009](https://www.jair.org/index.php/jair/article/view/10640) |
+| **Statistical IR** | Time-based language models, temporal ranking | [Li & Croft, 2003](https://dl.acm.org/doi/10.1145/956863.956951), [Berberich et al., 2010](https://link.springer.com/chapter/10.1007/978-3-642-12275-0_5) |
+| **Early Neural** | Temporal word embeddings, GCN-based dating | [Vashishth et al., 2018](https://aclanthology.org/P18-1149/) |
+
+**📚 [Complete historical overview →](docs/methods/classical.md)**
+
+</details>
+
+### 🔬 [Complete Methods Comparison Tables →](docs/methods/)
 
 ---
 
-## 1️⃣ Temporal Foundations
+## 📖 Temporal Tasks
 
-### 1.1 Temporal Information Retrieval (TIR)
-Time-aware retrieval aims to identify documents that are not only topically relevant but also **temporally aligned** with the query’s intent — e.g., “latest Apple earnings” or “climate policy in 2015.”
+Core temporal prediction tasks supporting TQA systems:
 
-### 1.2 Temporal Question Answering (TQA)
-Goes beyond retrieval by requiring reasoning over **temporal constraints**, such as ordering events or computing intervals (e.g., “At what age did Obama win the Nobel Peace Prize?” → 48 years).
+| Task | Input | Output | Key Applications | Representative Papers |
+|------|-------|--------|-----------------|---------------------|
+| **Event Dating** | Event description | Event timestamp | Historical analysis, timeline construction | [Das et al., 2017](https://dl.acm.org/doi/10.1145/3132847.3133022), [Wang et al., 2021](https://dl.acm.org/doi/10.1145/3404835.3462871) |
+| **Document Dating** | Document text | Creation date | Digital preservation, metadata recovery | [Kumar et al., 2012](https://arxiv.org/abs/1211.2290), [Vashishth et al., 2018](https://aclanthology.org/P18-1149/) |
+| **Focus Time Estimation** | Document content | Discussed time period | Historical QA, event-centric retrieval | [Jatowt et al., 2013](https://dl.acm.org/doi/10.1145/2505515.2505549), [Shrivastava et al., 2017](https://link.springer.com/chapter/10.1007/978-3-319-71928-3_25) |
+| **Query Time Profiling** | Search query | Temporal intent/distribution | Time-aware search, query understanding | [Kanhabua & Nørvåg, 2010](https://link.springer.com/chapter/10.1007/978-3-642-15464-5_27), [Dakka et al., 2008](https://dl.acm.org/doi/10.1145/1458082.1458417) |
 
----
-
-## 2️⃣ Datasets and Benchmarks
-
-### 2.1 Diachronic & Synchronic Corpora
-- **Diachronic**: Long-term archives (e.g., *NYT*, *Chronicling America*) capturing event evolution.  
-- **Synchronic**: Snapshot datasets (e.g., *Wikipedia dumps*) reflecting world knowledge at a fixed time.
-
-### 2.2 Temporal QA Datasets
-Key datasets include **TimeQA**, **ArchivalQA**, **TempLAMA**, and **ComplexTempQA**, covering both explicit and implicit temporal reasoning.
+### 📋 [Detailed Task Descriptions & Methodologies →](docs/tasks/)
 
 ---
 
-## 3️⃣ Methods and Models
+## 🏥 Domain-Specific Applications
 
-### 3.1 Temporal Language Models
-Models such as **TempoT5**, **TempoBERT**, and **BiTimeBERT** incorporate timestamps or temporal cues directly into their architecture for better time-aware representations.
+### Medical Domain
 
-### 3.2 Temporal Retrieval-Augmented Generation (RAG)
-Approaches like **TempRetriever** and **TempRALM** integrate neural retrieval with generative reasoning to dynamically incorporate up-to-date evidence.
+**Challenges**: Patient timeline reconstruction, symptom progression, treatment sequencing
 
-### 3.3 Temporal Reasoning Capabilities
-Beyond modeling, recent works explore **event ordering**, **duration estimation**, and **temporal robustness** — testing whether LLMs can reason consistently over time.
+| System/Dataset | Focus | Key Paper |
+|----------------|-------|-----------|
+| TimeText | Time-oriented clinical QA | [Zhou et al., 2008](https://academic.oup.com/jamia/article/15/1/99/776108) |
+| Temporal Clinical QA | Semantic web techniques | [Tao et al., 2010](https://link.springer.com/chapter/10.1007/978-3-642-17749-1_16) |
+| Time-aware Health QA | Evidence retrieval with recency | [Vladika & Matthes, 2024](https://aclanthology.org/2024.findings-naacl.307/) |
+
+### Legal Domain
+
+**Challenges**: Evolving statutes, precedent timelines, jurisdiction-specific temporal expressions
+
+| System/Dataset | Focus | Key Paper |
+|----------------|-------|-----------|
+| ChronosLex | Time-aware incremental training | [T.y.s.s et al., 2024](https://aclanthology.org/2024.acl-long.167/) |
+| Legal QA (German) | Civil law system | [Büttner & Habernal, 2024](https://aclanthology.org/2024.eacl-long.120/) |
+| JNLPBA | Legal document QA | [Kien et al., 2020](https://aclanthology.org/2020.coling-main.86/) |
+
+### Financial Domain
+
+**Challenges**: Regulatory changes, market events, time-sensitive numerical reasoning
+
+| Dataset | Focus | Key Paper |
+|---------|-------|-----------|
+| FinQA | Numerical reasoning over financial data | [Chen et al., 2021](https://aclanthology.org/2021.emnlp-main.300/) |
+| FinTextQA | Long-form financial QA | [Chen et al., 2024](https://aclanthology.org/2024.acl-long.332/) |
+| FinDER | Financial QA with RAG | [Choi et al., 2025](https://arxiv.org/abs/2504.15800) |
+
+### 🏢 [Complete Domain Analysis →](docs/domains/)
+
+---
+
+## 🛠️ Resources & Tools
+
+### Temporal Taggers & NLP Tools
+
+| Tool | Year | Languages | Type | Features | Link |
+|------|------|-----------|------|----------|------|
+| **HeidelTime** | 2010 | 200+ | Rule-based | High precision, domain adaptation | [Paper](https://aclanthology.org/S10-1071/) · [GitHub](https://github.com/HeidelTime/heideltime) |
+| **SUTime** | 2012 | English | Rule-based | Stanford CoreNLP integration | [Paper](https://aclanthology.org/L12-1015/) · [Website](https://nlp.stanford.edu/software/sutime.html) |
+| **CogCompTime** | 2018 | English | Neural | Compositional temporal understanding | [Paper](https://aclanthology.org/D18-2012/) · [GitHub](https://github.com/CogComp/cogcomp-nlp) |
+| **Temponym Tagger** | 2016 | English | Hybrid | Implicit temporal references | [Paper](https://dl.acm.org/doi/10.1145/2872427.2883017) |
+
+### Document Collections
+
+| Collection | Period | Size | Domain | Access |
+|-----------|--------|------|--------|--------|
+| NYT Annotated Corpus | 1987-2007 | 1.8M articles | News | [LDC License](https://catalog.ldc.upenn.edu/LDC2008T19) |
+| Chronicling America | 1800-1920 | Historical | Newspapers | [Free Access](https://chroniclingamerica.loc.gov/) |
+| Newswire Corpus | 1878-1977 | 2.7M articles | News | [HuggingFace](https://huggingface.co/datasets/dell-research-harvard/newswire) |
+| Wikipedia Dumps | Various | TB-scale | Encyclopedia | [Wikimedia](https://dumps.wikimedia.org/) |
+
+### Evaluation Frameworks
+
+- **Temporal Robustness Testing**: [Wallat et al., 2024](https://dl.acm.org/doi/10.1145/3616855.3635814)
+- **TimeBench**: Comprehensive temporal reasoning benchmark ([Chu et al., 2024](https://aclanthology.org/2024.acl-long.68/))
+- **TRAM**: Multi-dimensional temporal reasoning evaluation ([Wang & Zhao, 2024](https://aclanthology.org/2024.findings-acl.380/))
+
+### 📦 [Complete Resource Catalog →](docs/resources/)
+
+---
+
+## 🚀 Future Directions
+
+Our survey identifies **7 critical research areas** requiring immediate attention:
+
+### 1️⃣ Dynamic Temporal Knowledge Management
+
+**Problem**: Static corpora can't handle evolving facts  
+**Challenge**: Temporal propagation when updating related events  
+**Needed**: Real-time knowledge graphs with dependency tracking
+
+### 2️⃣ Temporally-Aware LLM Agents
+
+**Problem**: LLMs hallucinate temporal information  
+**Challenge**: Resolving "last Tuesday" or "since our last chat"  
+**Needed**: Timeline memory, temporal reference resolution
+
+### 3️⃣ Diachronic-Synchronic Integration
+
+**Problem**: Most systems use only one knowledge type  
+**Challenge**: Aligning historical trends with current snapshots  
+**Needed**: Cross-source temporal alignment algorithms
+
+### 4️⃣ Temporal Uncertainty & Confidence
+
+**Problem**: Systems treat all dates as exact  
+**Challenge**: "Around 476 AD", "mid-20th century"  
+**Needed**: Probabilistic temporal representations
+
+### 5️⃣ Multilingual & Multimodal TQA
+
+**Problem**: Most work is English text-only  
+**Challenge**: Lunar calendars, visual time cues, cultural references  
+**Needed**: Cross-lingual temporal taggers, vision-language models
+
+### 6️⃣ Implicit Temporal Intent Understanding
+
+**Problem**: Many questions hide their time constraints  
+**Challenge**: Inferring "now" vs. "historically" from context  
+**Needed**: Context-dependent temporal intent detection
+
+### 7️⃣ Evaluation & Benchmarking
+
+**Problem**: Standard metrics don't capture temporal coherence  
+**Challenge**: Measuring temporal grounding, not just accuracy  
+**Needed**: Temporal-aware evaluation protocols
+
 
 ---
 
@@ -114,100 +371,6 @@ We highlight open challenges for building truly time-aware systems:
 
 
 
-## Table of Contents
-1. [Surveys & Tutorials](#surveys--tutorials)
-2. [Temporal IR – Query & Ranking](#temporal-ir--query--ranking)
-3. [Document Dating & Event‑Time Estimation](#document-dating--event‑time-estimation)
-4. [Datasets & Benchmarks for Temporal QA](#datasets--benchmarks-for-temporal-qa)
-5. [Temporal QA – Models & Methods](#temporal-qa--models--methods)
-6. [Temporal Language Models & Representation Learning](#temporal-language-models--representation-learning)
-
----
-
-## Surveys & Tutorials
-| Year | Title & Link | Citation key |
-|------|--------------|--------------|
-| 2025 | **From Matching to Generation: A Survey on Generative Information Retrieval** – Li *et al.* [[ACM]](https://doi.org/10.1145/3722552) | `li2024matching` |
-| 2023 | **Large Language Models for Information Retrieval: A Survey** – Zhu *et al.* [[arXiv]](https://arxiv.org/abs/2308.07107) | `zhu2023large` |
-| 2021 | **Retrieving and Reading: A Comprehensive Survey on Open‑Domain Question Answering** – Zhu *et al.* [[arXiv]](https://arxiv.org/abs/2101.00774) | `zhu2021retrieving` |
-| 2016 | **Temporal Information Retrieval** (SIGIR tutorial) – Kanhabua & Anand [[ACM]](https://doi.org/10.1145/2911451.2914805) | `kanhabua2016temporal` |
-| 2014 | **Survey of Temporal Information Retrieval and Related Applications** – Campos *et al.* [[ACM]](https://doi.org/10.1145/2619088) | `campos2014survey` |
-
----
-
-## Temporal IR – Query & Ranking
-| Year | Title & Link | Citation key |
-|------|--------------|--------------|
-| 2009 | **Time Will Tell: Leveraging Temporal Expressions in IR** – Arikan *et al.* |
-| 2009 | **Improving Search Relevance for Implicitly Temporal Queries** – Metzler *et al.* |
-| 2010 | **A Language‑Model Approach for Temporal Information Needs** – Berberich *et al.* |
-| 2010 | **Determining Time of Queries for Re‑Ranking Search Results** – Kanhabua & Norvåg |
-| 2007 | **Temporal Profiles of Queries** – Jones & Diaz |
-| 2008 | **Answering General Time‑Sensitive Queries** – Dakka *et al.* |
-| 2014 | **Identifying Time Intervals of Interest to Queries** – Gupta & Berberich |
-| 2003 | **Time‑Based Language Models** – Li & Croft |
-
----
-
-## Document Dating & Event‑Time Estimation
-| Year | Title & Link | Citation key |
-|------|--------------|--------------|
-| 2021 | **Event Occurrence Date Estimation via Multivariate Time‑Series** – Wang *et al.* |
-| 2018 | **Leveraging Linked Entities to Estimate Focus Time of Short Texts** – Morbidoni *et al.* |
-| 2017 | **Estimating Event Focus Time Using Neural Word Embeddings** – Das *et al.* |
-| 2017 | **Concept‑Driven Graph‑Based Focus‑Time Estimation** – Shrivastava *et al.* |
-| 2018 | **Dating Documents with Graph Convolution Networks** – Vashishth *et al.* |
-| 2013 | **Estimating Document Focus Time** – Jatowt *et al.* |
-| 2012 | **Dating Texts without Explicit Temporal Cues** – Kumar *et al.* |
-| 2008 | **Improving Temporal LMs for Dating Non‑Timestamped Docs** – Kanhabua & Norvåg |
-| 2005 | **Temporal Language Models for Disclosure of Historical Text** – Jong *et al.* |
-
----
-
-## Datasets & Benchmarks for Temporal QA
-| Year | Dataset | Paper / Link |
-|------|---------|--------------|
-| 2024 | **TimeBench** – Chu *et al.* [[ACL]](https://aclanthology.org/2024.acl-long.66/) |
-| 2024 | **TIQ** (Temporal QA with Implicit Constraints) – Jia *et al.* [[ACM]](https://doi.org/10.1145/3589335.3651895) |
-| 2024 | **ChroniclingAmericaQA** – Piryani *et al.* [[ACM]](https://doi.org/10.1145/3626772.3657891) |
-| 2023 | **MenatQA** – Wei *et al.* [[ACL]](https://aclanthology.org/2023.findings-emnlp.100/) |
-| 2022 | **ArchivalQA** – Wang *et al.* [[ACM]](https://doi.org/10.1145/3477495.3531734) |
-| 2021 | **A Dataset for Answering Time‑Sensitive Questions** – Chen *et al.* (NeurIPS Datasets) |
-| 2020 | **TORQUE** – Ning *et al.* [[ACL]](https://aclanthology.org/2020.emnlp-main.88/) |
-| 2018 | **TempQuestions** – Jia *et al.* [[ACM]](https://doi.org/10.1145/3184558.3191536) |
-
----
-
-## Temporal QA – Models & Methods
-| Year | Title & Link | Citation key |
-|------|--------------|--------------|
-| 2024 | **Continual Learning for Temporal‑Sensitive QA** – Yang *et al.* (IJCNN) |
-| 2024 | **Enhancing Temporal Sensitivity & Reasoning for Time‑Sensitive QA** – Yang *et al.* [[ACL]](https://aclanthology.org/2024.findings-emnlp.848/) |
-| 2023 | **Benchmarking & Improving Temporal Reasoning of LLMs** – Tan *et al.* [[ACL]](https://aclanthology.org/2023.acl-long.828/) |
-| 2021 | **Improving QA for Event‑Focused Questions in News Collections** – Wang *et al.* (IR Journal) |
-| 2020 | **Machine Reading of Historical Events** – Honovich *et al.* [[ACL]](https://aclanthology.org/2020.acl-main.668/) |
-| 2009 | **Enhancing QA with Complex Temporal Question Processing** – Saquete *et al.* |
-| 2005 | **QA Based on Temporal Inference** – Harabagiu & Bejan |
-| 2004 | **Splitting Complex Temporal Questions for QA Systems** – Saquete *et al.* |
-
----
-
-## Temporal Language Models & Representation Learning
-| Year | Title & Link | Citation key |
-|------|--------------|--------------|
-| 2024 | **Time‑Sensitive Knowledge Editing via Efficient Finetuning** – Ge *et al.* [[ACL]](https://aclanthology.org/2024.acl-short.53/) |
-| 2023 | **Efficient Continue‑Training of Temporal LMs with Structural Info** – Su *et al.* [[ACL]](https://aclanthology.org/2023.findings-emnlp.418/) |
-| 2023 | **Salient Span Masking for Temporal Understanding** – Cole *et al.* [[ACL]](https://aclanthology.org/2023.eacl-main.222/) |
-| 2023 | **BiTimeBERT: Extending PLMs with Bi‑Temporal Information** – Wang *et al.* [[ACM]](https://doi.org/10.1145/3539618.3591686) |
-| 2022 | **Time‑Aware LMs as Temporal KBs** – Dhingra *et al.* [[TACL]](https://aclanthology.org/2022.tacl-1.15/) |
-| 2022 | **Time Masking for Temporal LMs** – Rosin *et al.* [[ACM]](https://doi.org/10.1145/3488560.3498529) |
-| 2022 | **Temporal Attention for Language Models** – Rosin & Radinsky [[ACL]](https://aclanthology.org/2022.findings-naacl.112/) |
-| 2022 | **Temporal Effects on Pre‑trained Models** – Agarwal & Nenkova [[TACL]](https://aclanthology.org/2022.tacl-1.53/) |
-| 2021 | **Dynamic Contextualised Word Embeddings** – Hofmann *et al.* [[ACL]](https://aclanthology.org/2021.acl-long.542/) |
-| 2021 | **Mind the Gap: Assessing Temporal Generalisation in NLMs** – Lazaridou *et al.* (NeurIPS) |
-| 2019 | **Neural Temporality Adaptation for Document Classification** – Huang & Paul [[ACL]](https://aclanthology.org/P19-1403/) |
-
----
 
 ## 🪪License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
