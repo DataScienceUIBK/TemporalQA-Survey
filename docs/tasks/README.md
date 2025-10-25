@@ -29,37 +29,25 @@ Temporal prediction tasks focus on inferring implicit or missing temporal signal
 ---
 
 ## 🎯 Task Relationships
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Temporal Question Answering              │
-│                                                             │
-│  "When did Obama win the Nobel Prize?" → 2009              │
-│  "What happened after the Berlin Wall fell?" → Events      │
-└─────────────────────────────────────────────────────────────┘
-                              ▲
-                              │
-                    Supported by ▼
-┌─────────────────────────────────────────────────────────────┐
-│              Core Temporal Prediction Tasks                 │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  ┌──────────────────┐  ┌──────────────────┐               │
-│  │ Document Dating  │  │ Focus Time Est.  │               │
-│  │                  │  │                  │               │
-│  │ When was this    │  │ What time does   │               │
-│  │ written?         │  │ this discuss?    │               │
-│  └──────────────────┘  └──────────────────┘               │
-│                                                             │
-│  ┌──────────────────┐  ┌──────────────────┐               │
-│  │ Event Dating     │  │ Query Time       │               │
-│  │                  │  │ Profiling        │               │
-│  │ When did X       │  │ What time is     │               │
-│  │ happen?          │  │ user seeking?    │               │
-│  └──────────────────┘  └──────────────────┘               │
-└─────────────────────────────────────────────────────────────┘
-```
 
----
+```mermaid
+graph LR
+    A["🎯 Temporal Question Answering<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>When did Obama win Nobel <br/> Prize? → 2009<br/>What happened after <br/> Berlin Wall fell? → Events"]
+    
+    A ==> B["🔧 Core Temporal<br/>Prediction Tasks"]
+    
+    B --> C["📄 Document Dating<br/>─────────────<br/>When was this<br/>written?"]
+    B --> D["🎯 Focus Time<br/>Estimation<br/>─────────────<br/>What time does<br/>this discuss?"]
+    B --> E["📅 Event Dating<br/>─────────────<br/>When did X<br/>happen?"]
+    B --> F["🔍 Query Time<br/>Profiling<br/>─────────────<br/>What time is<br/>user seeking?"]
+    
+    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:3px
+    style B fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style C fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style D fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style E fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style F fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+``` 
 
 ## 📊 Comprehensive Task Comparison
 
@@ -110,13 +98,13 @@ Estimating a document's **creation time** (publication date) based solely on tex
 
 | Method | Year | Approach | Key Innovation | Paper | Code |
 |--------|------|----------|----------------|-------|------|
-| **Time-based LM** | 2005 | Statistical | Unigram language models per time period | [de Jong et al., 2005](https://pure.knaw.nl/portal/en/publications/temporal-language-models-for-the-disclosure-of-historical-text) | N/A |
+| **Time-based LM** | 2005 | Statistical | Unigram language models per time period | [de Jong et al., 2005](https://djoerdhiemstra.com/wp-content/uploads/ahc05.pdf) | N/A |
 | **Temporal Classification** | 2006 | Statistical | Unsupervised periodic word usage | [Dalli, 2006](https://aclanthology.org/N06-2008/) | N/A |
-| **Enhanced TLM** | 2008 | Statistical | POS tags, tf-idf, collocations | [Kanhabua & Nørvåg, 2008](https://link.springer.com/chapter/10.1007/978-3-540-87599-4_37) | N/A |
+| **Enhanced TLM** | 2008 | Statistical | POS tags, tf-idf, collocations | [Kanhabua & Nørvåg, 2008](https://dl.acm.org/doi/10.1007/978-3-540-87599-4_37) | N/A |
 | **Dating without Cues** | 2012 | Statistical | Language models over chronons | [Kumar et al., 2012](https://arxiv.org/abs/1211.2290) | N/A |
 | **Temporal Text Ranking** | 2014 | Ranking | Pairwise ranking with logistic regression | [Niculae et al., 2014](https://aclanthology.org/E14-4004/) | N/A |
 | **GCN-based Dating** | 2018 | Neural | Graph convolutions on syntactic + temporal relations | [Vashishth et al., 2018](https://aclanthology.org/P18-1149/) | [GitHub](https://github.com/malllabiisc/NeuralDater) |
-| **TALM** | 2023 | Neural | Hierarchical temporal word representations | [Ren et al., 2023](https://aclanthology.org/2023.findings-emnlp.908/) | Contact authors |
+| **TALM** | 2023 | Neural | Hierarchical temporal word representations | [Ren et al., 2023](https://aclanthology.org/2023.findings-emnlp.911/) | Contact authors |
 
 ### Benchmark Datasets
 
@@ -174,8 +162,8 @@ Identifying the **time period(s) a document primarily discusses**, which may dif
 
 | Method | Year | Approach | Key Innovation | Paper | Code |
 |--------|------|----------|----------------|-------|------|
-| **Graph-based Method** | 2013 | Graph | Co-occurrence between terms and dates | [Jatowt et al., 2013](https://dl.acm.org/doi/10.1145/2505515.2505549) | N/A |
-| **Statistical Evidence** | 2015 | Statistical | External corpora for temporal associations | [Jatowt et al., 2015](https://www.sciencedirect.com/science/article/abs/pii/S0306457315000850) | N/A |
+| **Graph-based Method** | 2013 | Graph | Co-occurrence between terms and dates | [Jatowt et al., 2013](https://dl.acm.org/doi/10.1145/2505515.2505655)| N/A |
+| **Statistical Evidence** | 2015 | Statistical | External corpora for temporal associations | [Jatowt et al., 2015](https://dl.acm.org/doi/10.1016/j.ipm.2015.05.001) | N/A |
 | **Concept-driven** | 2017 | Graph | Wikipedia concepts with temporal relations | [Shrivastava et al., 2017](https://link.springer.com/chapter/10.1007/978-3-319-71928-3_25) | N/A |
 | **Entity-based** | 2018 | Neural + KB | Linked entities to DBpedia/Wikipedia | [Morbidoni et al., 2018](https://dl.acm.org/doi/10.1145/3216122.3216160) | N/A |
 | **Neural Embeddings** | 2017 | Neural | Time + word embeddings | [Das et al., 2017](https://dl.acm.org/doi/10.1145/3132847.3133022) | N/A |
@@ -240,10 +228,10 @@ Predicting the **specific date when an event occurred** given a textual descript
 
 | Method | Year | Approach | Key Innovation | Paper | Code |
 |--------|------|----------|----------------|-------|------|
-| **Time Vectors** | 2017 | Embeddings | Word + global temporal embeddings | [Das et al., 2017](https://dl.acm.org/doi/10.1145/3132847.3133022) | N/A |
-| **KB-based** | 2018 | Knowledge Base | DBpedia/Wikipedia entity linking | [Morbidoni et al., 2018](https://dl.acm.org/doi/10.1145/3216122.3216160) | N/A |
-| **Neural Extraction** | 2020 | Neural | LSTM + attention + MLP classifier | [Honovich et al., 2020](https://aclanthology.org/2020.acl-main.668/) | [GitHub](https://github.com/orhonovich/historical-event-dating) |
-| **TEP-Trans** | 2021 | Transformer | Multivariate time series forecasting | [Wang et al., 2021](https://dl.acm.org/doi/10.1145/3404835.3462871) | Contact authors |
+| **Time Vectors** | 2017 | Embeddings | Word + global temporal embeddings | [Das et al., 2017](https://dl.acm.org/doi/10.1145/3132847.3133131) | N/A |
+| **KB-based** | 2018 | Knowledge Base | DBpedia/Wikipedia entity linking | [Morbidoni et al., 2018](https://dl.acm.org/doi/10.1145/3216122.3216158) | N/A |
+| **Neural Extraction** | 2020 | Neural | LSTM + attention + MLP classifier | [Honovich et al., 2020](https://aclanthology.org/2020.acl-main.668/) | [GitHub](https://github.com/ltorroba/machine-reading-historical-events) |
+| **TEP-Trans** | 2021 | Transformer | Multivariate time series forecasting | [Wang et al., 2021](https://dl.acm.org/doi/10.1145/3404835.3462885) | Contact authors |
 
 ### Benchmark Datasets
 
@@ -309,11 +297,11 @@ Determining a query's **temporal intent** - what time period the user is interes
 
 | Method | Year | Approach | Key Innovation | Paper | Code |
 |--------|------|----------|----------------|-------|------|
-| **Temporal Profiles** | 2007 | Statistical | Model query temporal distributions | [Jones & Diaz, 2007](https://dl.acm.org/doi/10.1145/1277741.1277789) | N/A |
-| **Time-Sensitive Queries** | 2008 | Statistical | Timestamp analysis of results | [Dakka et al., 2008](https://dl.acm.org/doi/10.1145/1458082.1458417) | N/A |
+| **Temporal Profiles** | 2007 | Statistical | Model query temporal distributions | [Jones & Diaz, 2007](https://dl.acm.org/doi/10.1145/1247715.1247720) | N/A |
+| **Time-Sensitive Queries** | 2008 | Statistical | Timestamp analysis of results | [Dakka et al., 2008](https://dl.acm.org/doi/abs/10.1145/1458082.1458320) | N/A |
 | **Query Time Determination** | 2010 | Ranking | Analyze top-k documents | [Kanhabua & Nørvåg, 2010](https://link.springer.com/chapter/10.1007/978-3-642-15464-5_27) | N/A |
-| **Time-Aware Ranking** | 2011 | Comparative | Compare 5 temporal ranking methods | [Kanhabua & Nørvåg, 2011](https://dl.acm.org/doi/10.1145/2009916.2010083) | N/A |
-| **Time Interval Detection** | 2014 | Statistical | Timestamp + content temporal expressions | [Gupta & Berberich, 2014](https://dl.acm.org/doi/10.1145/2661829.2662036) | N/A |
+| **Time-Aware Ranking** | 2011 | Comparative | Compare 5 temporal ranking methods | [Kanhabua & Nørvåg, 2011](https://dl.acm.org/doi/10.1145/2009916.2010147) | N/A |
+| **Time Interval Detection** | 2014 | Statistical | Timestamp + content temporal expressions | [Gupta & Berberich, 2014](https://dl.acm.org/doi/abs/10.1145/2661829.2661927) | N/A |
 
 ### Query Categories
 
@@ -521,12 +509,6 @@ What's your end goal?
    - Probabilistic timestamps
    - Confidence estimation
 
-### Open Research Questions
-
-1. How to handle documents discussing multiple time periods equally?
-2. Can we unify all four tasks in a single framework?
-3. How to leverage LLMs for temporal prediction tasks?
-4. What's the role of causal reasoning in temporal tasks?
 
 ---
 
