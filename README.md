@@ -179,7 +179,7 @@ Time shapes how we:
 | **TsContriever** | 2024 | Contrastive time-sensitive retrieval | Time-aware embeddings | [Paper](https://dl.acm.org/doi/10.1145/3627673.3679800) | [Github](https://github.com/suzhou-22/TS-Retriever) |
 | **FreshLLMs** | 2024 | Search augmentation for recency | Web search integration | [Paper](https://aclanthology.org/2024.findings-acl.820/) | [GitHub](https://github.com/freshllms/freshqa) |
 
-**🔧 [Implementation details & architecture comparisons →](docs/methods/temporal_rag.md)**
+<!-- **🔧 [Implementation details & architecture comparisons →](docs/methods/temporal_rag.md)**
 
 </details>
 
@@ -195,7 +195,7 @@ Time shapes how we:
 | **TODAY** | 2023 | Differential analysis | Temporal robustness testing | [Paper](https://aclanthology.org/2023.acl-long.667/) | [GitHub](https://github.com/DanielFeng0619/TODAY) |
 | **Narrative-of-Thought** | 2024 | Narrative-based reasoning | Recounted narratives for coherence | [Paper](https://aclanthology.org/2024.findings-emnlp.962/) | [GitHub](https://github.com/launchnlp/NoT) |
 
-**🧩 [Reasoning mechanisms & benchmarks →](docs/methods/temporal_reasoning.md)**
+<!-- **🧩 [Reasoning mechanisms & benchmarks →](docs/methods/temporal_reasoning.md)**
 
 </details>
 
@@ -227,7 +227,7 @@ Core temporal prediction tasks supporting TQA systems:
 | **Focus Time Estimation** | Document content | Discussed time period | Historical QA, event-centric retrieval | [Jatowt et al., 2013](https://dl.acm.org/doi/10.1145/2505515.2505655), [Jatowt et al., 2013](https://dl.acm.org/doi/10.1016/j.ipm.2015.05.001), [Shrivastava et al., 2017](https://link.springer.com/chapter/10.1007/978-3-319-71928-3_25) |
 | **Query Time Profiling** | Search query | Temporal intent/distribution | Time-aware search, query understanding | [Kanhabua & Nørvåg, 2010](https://link.springer.com/chapter/10.1007/978-3-642-15464-5_27),[Jones and Diaz 2007](https://dl.acm.org/doi/10.1145/1247715.1247720) [Dakka et al., 2008](https://dl.acm.org/doi/abs/10.1145/1458082.1458320), [Gupta and Berberich 2014](https://dl.acm.org/doi/abs/10.1145/2661829.2661927) |
 
-### 📋 [Detailed Task Descriptions & Methodologies →](docs/tasks/)
+ ### 📋 [Detailed Task Descriptions & Methodologies →](docs/tasks/)
 
 ---
 
@@ -260,7 +260,7 @@ Core temporal prediction tasks supporting TQA systems:
 | FinTextQA | Long-form financial QA | [Chen et al., 2024](https://aclanthology.org/2024.acl-long.328/) |
 | FinDER | Financial QA with RAG | [Choi et al., 2025](https://arxiv.org/abs/2504.15800) |
 
-### 🏢 [Complete Domain Analysis →](docs/domains/)
+<!-- ### 🏢 [Complete Domain Analysis →](docs/domains/) -->
 
 ---
 
@@ -290,7 +290,7 @@ Core temporal prediction tasks supporting TQA systems:
 - **TimeBench**: Comprehensive temporal reasoning benchmark ([Chu et al., 2024](https://aclanthology.org/2024.acl-long.66/))
 - **TRAM**: Multi-dimensional temporal reasoning evaluation ([Wang & Zhao, 2024](https://aclanthology.org/2024.findings-acl.382/))
 
-### 📦 [Complete Resource Catalog →](docs/resources/)
+<!-- ### 📦 [Complete Resource Catalog →](docs/resources/) -->
 
 ---
 
