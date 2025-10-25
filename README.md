@@ -18,7 +18,6 @@
 ## 📋 Table of Contents
 
 - [📘 Overview](#-overview)
-- [🎯 What is Temporal QA?](#-what-is-temporal-qa)
 - [📊 Datasets](#-datasets)
 - [🔧 Methods & Approaches](#-methods--approaches)
 - [📖 Temporal Tasks](#-temporal-tasks)
@@ -26,7 +25,6 @@
 - [🛠️ Resources & Tools](#️-resources--tools)
 - [🚀 Future Directions](#-future-directions)
 - [📝 Citation](#-citation)
-- [🤝 Contributing](#-contributing)
 
 ---
 ### 📘 Overview
@@ -345,24 +343,7 @@ Our survey identifies **7 critical research areas** requiring immediate attentio
 
 ---
 
-## 4️⃣ Future Directions
-
-We highlight open challenges for building truly time-aware systems:
-- Dynamic temporal knowledge management  
-- Diachronic–synchronic integration  
-- Temporal uncertainty and confidence modeling  
-- Multilingual and multimodal temporal reasoning  
-- Implicit temporal intent detection  
-
----
-
-
-
-
-## 🪪License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## ✨Citation
+## ✨ Citation
 If you find this work useful, please cite [📜our paper](https://arxiv.org/abs/2505.20243):
 ### Plain
 Piryani, B., Abdullah, A., Mozafari, J., Anand, A., & Jatowt, A. (2025). It's High Time: A Survey of Temporal Question Answering. arXiv preprint arXiv:2505.20243.
@@ -376,3 +357,6 @@ Piryani, B., Abdullah, A., Mozafari, J., Anand, A., & Jatowt, A. (2025). It's Hi
 }
 
 ```
+
+## 🪪License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
