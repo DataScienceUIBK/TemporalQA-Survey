@@ -153,7 +153,7 @@ Time shapes how we:
 
 | Model | Year | Key Innovation | Architecture | Paper | Code |
 |-------|------|----------------|--------------|-------|------|
-| **TempoT5** | 2022 | Temporal conditioning via prefixes | T5 + timestamp prefixes | [Paper](https://aclanthology.org/2022.tacl-1.16/) | [GitHub](https://github.com/google-research/language/tree/master/language/templama) |
+| **TempoT5** | 2022 | Temporal conditioning via prefixes | T5 + timestamp prefixes | [Paper](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00459/110012/Time-Aware-Language-Models-as-Temporal-Knowledge) | [GitHub](https://github.com/google-research/language/tree/master/language/templama) |
 | **BiTimeBERT** | 2023 | Dual temporal encoding (timestamp + content) | BERT + bi-temporal module | [Paper](https://dl.acm.org/doi/10.1145/3539618.3591686) | [Github](https://github.com/WangJiexin/BiTimeBERT) |
 | **TempoBERT** | 2022 | Time-aware masking strategy | BERT + temporal masking | [Paper](https://dl.acm.org/doi/10.1145/3488560.3498529) | [GitHub](https://github.com/guyrosin/tempobert) |
 | **TALM** | 2023 | Hierarchical temporal word representations | BERT + temporal adapter | [Paper](https://aclanthology.org/2023.findings-emnlp.911/) | [Github](https://github.com/coderlihong/text-dating) |
