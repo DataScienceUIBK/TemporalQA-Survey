@@ -80,12 +80,12 @@ This directory contains comprehensive documentation of all Temporal QA datasets,
 
 ### By Answer Type
 
-| Type | Count | Examples |
-|------|-------|----------|
-| **Extractive** | 15 | ArchivalQA, TimeQA, NewsQA |
-| **Abstractive** | 7 | TEMPREASON, TemporalAlignmentQA, TRACIE |
-| **Multiple Choice** | 3 | ForecastQA, ReaLTimeQA, TIMEDIAL |
-| **Entities/Freeform** | 2 | TiQ, NewsQA |
+| Type |  Examples |
+|------|----------|
+| **Extractive** |  ArchivalQA, TimeQA, NewsQA |
+| **Abstractive** | TEMPREASON, TemporalAlignmentQA, TRACIE |
+| **Multiple Choice** | ForecastQA, ReaLTimeQA, TIMEDIAL |
+| **Entities/Freeform** | TiQ, NewsQA |
 
 ---
 
