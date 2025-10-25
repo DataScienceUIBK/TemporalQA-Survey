@@ -231,6 +231,7 @@ Please include:
 - Brief description of the contribution
 
 You can also [open an issue](../../issues) on GitHub.
+
 ---
 
 [← Back to Main README](../../README.md)
