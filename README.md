@@ -260,7 +260,7 @@ Core temporal prediction tasks supporting TQA systems:
 | FinTextQA | Long-form financial QA | [Chen et al., 2024](https://aclanthology.org/2024.acl-long.328/) |
 | FinDER | Financial QA with RAG | [Choi et al., 2025](https://arxiv.org/abs/2504.15800) |
 
-<!-- ### 🏢 [Complete Domain Analysis →](docs/domains/) -->
+### 🏢 [Complete Domain Analysis →](docs/domains/) 
 
 ---
 
