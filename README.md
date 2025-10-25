@@ -356,3 +356,22 @@ Piryani, B., Abdullah, A., Mozafari, J., Anand, A., & Jatowt, A. (2025). It's Hi
 
 ## 🪪License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📝 Contributing
+
+We welcome contributions to keep this survey comprehensive and up-to-date!
+
+### Missing a Paper or Dataset?
+
+If we've missed your work or you know of a relevant paper/dataset that should be included, please send us an email at:
+
+📧 **[bhawna.piryani@uibk.ac.at](mailto:bhawna.piryani@uibk.ac.at)**
+
+Please include:
+- Paper title and authors
+- Link to paper and code/data (if available)
+- Brief description of the contribution
+
+You can also [open an issue](../../issues) on GitHub.
+
+
