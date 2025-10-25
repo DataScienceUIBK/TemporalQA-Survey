@@ -514,13 +514,20 @@ What's your end goal?
 
 ## 📝 Contributing
 
-To add information about a temporal task:
-1. Create detailed task page in appropriate file
-2. Add to comparison tables
-3. Include evaluation metrics and benchmarks
-4. Link relevant papers and code
+We welcome contributions to keep this survey comprehensive and up-to-date!
 
-[Open an issue](../../issues)!
+### Missing a Paper or Dataset?
+
+If we've missed your work or you know of a relevant paper/dataset that should be included, please send us an email at:
+
+📧 **[bhawna.piryani@uibk.ac.at](mailto:bhawna.piryani@uibk.ac.at)**
+
+Please include:
+- Paper title and authors
+- Link to paper and code/data (if available)
+- Brief description of the contribution
+
+You can also [open an issue](../../issues) on GitHub.
 
 ---
 
