@@ -36,42 +36,115 @@ This directory contains comprehensive documentation of all approaches to Tempora
    └─ Retrieval augmentation, temporal reasoning
 ```
 
----
+## 📊 Comprehensive Methods Comparison
 
-## 📋 Complete Methods Catalog
+### Table 1: Method Architecture & Design Overview
 
-### At-a-Glance Comparison
-
-| Method | Year | Type | Task | Key Innovation | Paper | Code |
-|--------|------|------|------|----------------|-------|------|
-| **TEMPORAL LANGUAGE MODELS** |
-| TempoT5 | 2022 | Enc-Dec | TQA, Knowledge Updates | Temporal prefixing | [📄](https://aclanthology.org/2022.tacl-1.16/) | [💾](https://github.com/google-research/language/tree/master/language/templama) |
-| BiTimeBERT | 2023 | Encoder | Event Dating, TQA | Dual temporal encoding | [📄](https://dl.acm.org/doi/10.1145/3539618.3591675) | Contact authors |
-| TempoBERT | 2022 | Encoder | Semantic Change | Time masking | [📄](https://dl.acm.org/doi/10.1145/3488560.3498529) | [💾](https://github.com/GuyRosin/TempoBERT) |
-| TALM | 2023 | Encoder | Historical Dating | Hierarchical temporal | [📄](https://aclanthology.org/2023.findings-emnlp.908/) | Contact authors |
-| SG-TLM | 2023 | Encoder | Temporal LM | Syntax-guided masking | [📄](https://aclanthology.org/2023.findings-emnlp.425/) | [💾](https://github.com/szhaochen/SG-TLM) |
-| TSM | 2023 | Enc-Dec | TQA | Temporal span masking | [📄](https://aclanthology.org/2023.eacl-main.221/) | Contact authors |
-| Temporal Attention | 2022 | Encoder | Semantic Change | Time-aware attention | [📄](https://aclanthology.org/2022.findings-naacl.114/) | [💾](https://github.com/GuyRosin/temporal-attention) |
-| TCQA | 2023 | Enc-Dec | TQA | Synthetic QA training | [📄](https://aclanthology.org/2023.findings-emnlp.5/) | Contact authors |
-| Time-aware Prompting | 2022 | Decoder | Generation | Temporal prompts | [📄](https://aclanthology.org/2022.findings-emnlp.533/) | [💾](https://github.com/yuchenlin/TimePrompt) |
-| **TEMPORAL RAG SYSTEMS** |
-| TempRetriever | 2025 | Dense Retrieval | TQA | Fusion temporal embeddings | [📄](https://arxiv.org/abs/2502.21024) | Coming soon |
-| TimeR4 | 2024 | RAG Pipeline | TKGQA | 4-stage retrieve-rewrite | [📄](https://aclanthology.org/2024.emnlp-main.408/) | [💾](https://github.com/czy1999/TimeR4) |
-| MRAG | 2024 | Modular RAG | TQA | Multi-hop temporal | [📄](https://arxiv.org/abs/2412.15540) | Coming soon |
-| TempRALM | 2024 | RAG | TQA | Temporal proximity | [📄](https://arxiv.org/abs/2410.14333) | Contact authors |
-| TsContriever | 2024 | Dense Retrieval | TQA | Time-sensitive contrastive | [📄](https://dl.acm.org/doi/10.1145/3627673.3679786) | Contact authors |
-| FreshLLMs | 2024 | Search-Augmented | Real-time QA | Web search integration | [📄](https://aclanthology.org/2024.findings-acl.820/) | [💾](https://github.com/freshllms/freshqa) |
-| **TEMPORAL REASONING** |
-| ECONET | 2021 | Continual Learning | Event Consistency | Temporal adaptation | [📄](https://aclanthology.org/2021.emnlp-main.436/) | [💾](https://github.com/rujunhan/ECONET) |
-| ConTempo | 2024 | Relation Extraction | Temporal Relations | Contrastive learning | [📄](https://aclanthology.org/2024.findings-acl.90/) | [💾](https://github.com/JingchengNiu/ConTempo) |
-| TIMERS | 2021 | Relation Extraction | Document-level | Structured inference | [📄](https://aclanthology.org/2021.acl-short.67/) | [💾](https://github.com/PuneetMathur/TIMERS) |
-| TRAM | 2024 | Benchmark | Multi-dimensional | Comprehensive eval | [📄](https://aclanthology.org/2024.findings-acl.380/) | [💾](https://github.com/DAMO-NLP-SG/TRAM) |
-| TODAY | 2023 | Reasoning | Differential analysis | Temporal robustness | [📄](https://aclanthology.org/2023.acl-long.667/) | [💾](https://github.com/DanielFeng0619/TODAY) |
-| Narrative-of-Thought | 2024 | Prompting | Narrative reasoning | Story-based prompting | [📄](https://aclanthology.org/2024.findings-emnlp.962/) | [💾](https://github.com/zhangfx19/Narrative-of-Thought) |
-| Timeline Self-Reflection | 2025 | Reasoning | Self-reflective | Iterative refinement | [📄](https://arxiv.org/abs/2504.05258) | Coming soon |
-| TreMu | 2025 | Neuro-symbolic | Multi-session memory | Memory-augmented | [📄](https://arxiv.org/abs/2502.01630) | Coming soon |
+| Method | Year | Type | Task | Temporal Representation | Temporal Signals | Architecture | Paper | Code |
+|--------|------|------|------|------------------------|------------------|--------------|-------|------|
+| **TempoT5** | 2022 | Encoder-Decoder | TQA | Explicit timestamps | Document timestamps + temporal context | T5 + temporal conditioning | [📄](https://aclanthology.org/2022.tacl-1.16/) | [💾](https://github.com/google-research/language/tree/master/language/templama) |
+| **TempoBERT** | 2022 | Encoder | Semantic Change Detection, Sentence Time Prediction | Explicit timestamps | Time tokens | BERT + temporal masking | [📄](https://dl.acm.org/doi/10.1145/3488560.3498529) | [💾](https://github.com/GuyRosin/TempoBERT) |
+| **BiTimeBERT** | 2023 | Encoder | Event Time Estimation, Document Dating, TQA | Explicit timestamps and content temporal expressions | Document timestamps + temporal expressions in text | BERT + dual temporal encoding | [📄](https://dl.acm.org/doi/10.1145/3539618.3591675) | Contact authors |
+| **TALM** | 2023 | Temporal adaptation + Hierarchical modeling | Historical Dating | Implicit (Time-specific word variants) | Time-specific representations | BERT + Temporal Adaptation + Hierarchical Document Encoder | [📄](https://aclanthology.org/2023.findings-emnlp.908/) | Contact authors |
+| **SG-TLM** | 2023 | TLM | Temporal Language Modeling, TQA | Implicit Temporal Information | Syntactic role distributions + timestamps | BERT + syntax-guided masking + temporal-aware masking | [📄](https://aclanthology.org/2023.findings-emnlp.425/) | [💾](https://github.com/szhaochen/SG-TLM) |
+| **TSM** | 2023 | Encoder | Temporal language modelling, TQA | Implicit temporal spans | Temporal expressions (dates, durations) | T5 + temporal span masking | [📄](https://aclanthology.org/2023.eacl-main.221/) | Contact authors |
+| **Temporal Attention** | 2022 | Encoder | Semantic Change Detection | Explicit Document timestamp | Document timestamp | Transformer encoder with time-aware attention via time matrix T | [📄](https://aclanthology.org/2022.findings-naacl.114/) | [💾](https://github.com/GuyRosin/temporal-attention) |
+| **TempRetriever** | 2025 | Neural Embedding | TQA | Explicit + Implicit temporal information | Query timestamps + document timestamps | Semantic + Temporal Encoder | [📄](https://arxiv.org/abs/2502.21024) | Coming soon |
+| **TsContriever** | 2024 | Neural Retrieval | TQA | Explicit + Implicit temporal information | Query timestamps + document timestamps | Semantic + Temporal Encoder | [📄](https://dl.acm.org/doi/10.1145/3627673.3679786) | Contact authors |
+| **TempRALM** | 2024 | RAG | TQA | Explicit temporal Information | Query + document timestamps | RAG + temporal enhancement | [📄](https://arxiv.org/abs/2410.14333) | Contact authors |
+| **TimeR4** | 2024 | RAG | TQA | Explicit temporal facts | Question constraints + TKG timestamps | Retrieve-Rewrite-Retrieve-Rerank with contrastive time-aware retriever + LLaMA2 reasoning | [📄](https://aclanthology.org/2024.emnlp-main.408/) | [💾](https://github.com/czy1999/TimeR4) |
+| **MRAG** | 2024 | Neural + Symbolic | TQA | Explicit temporal information | Query constraints + Document timestamps | Modular RAG framework (Question Processing, Retrieval + Summarization + Semantic-Temporal Hybrid Ranking) | [📄](https://arxiv.org/abs/2412.15540) | Coming soon |
 
 ---
+
+### Table 2: Method Implementation Details
+
+| Method | Input | Output | Knowledge | Processing | Methodology | Paper | Code |
+|--------|-------|--------|-----------|------------|-------------|-------|------|
+| **TempoT5** | Text + temporal prefix | Masked span prediction | CUSTOMNEWS + TEMPLAMA | Temporal conditioning + uniform sampling | Input prefixing for time-aware modeling and efficient updates | [📄](https://aclanthology.org/2022.tacl-1.16/) | [💾](https://github.com/google-research/language/tree/master/language/templama) |
+| **TempoBERT** | Text + timestamps | Time tokens | News corpus | Implicit temporal reasoning via time masking | Time-aware pretraining with masking | [📄](https://dl.acm.org/doi/10.1145/3488560.3498529) | [💾](https://github.com/GuyRosin/TempoBERT) |
+| **BiTimeBERT** | News articles with timestamps | Time predictions (day/month/year granularity) | NYT corpus | Bi-temporal reasoning using both timestamp and content time | Time-Aware Masked Language Modeling, Document Dating | [📄](https://dl.acm.org/doi/10.1145/3539618.3591675) | Contact authors |
+| **TALM** | Historical text | Time period classification | Chinese Twenty-Four Histories + English Royal Society Corpus | Temporal word adaptation and contextual learning | Learn separate word representations per time period + alignment | [📄](https://aclanthology.org/2023.findings-emnlp.908/) | Contact authors |
+| **SG-TLM** | Text + timestamp | Masked token + time prediction | WMT News Crawl + Reddit Time Corpus | Syntax-guided masking (SGM) + temporal-aware masking (TAM) | Syntax-based lexicon selection for efficient temporal adaptation | [📄](https://aclanthology.org/2023.findings-emnlp.425/) | [💾](https://github.com/szhaochen/SG-TLM) |
+| **TSM** | Text with temporal expressions | Masked span prediction | Wikipedia | Temporal span masking using SUTIME parser + intermediate training | SUTIME parser identifies temporal expressions (Time, Duration, Set, Date) for targeted masking during intermediate pretraining | [📄](https://aclanthology.org/2023.eacl-main.221/) | Contact authors |
+| **Temporal Attention** | Text + Document timestamp | Time-specific contextualized embeddings | Time-annotated corpora (SemEval datasets) | Time-aware self-attention mechanism with additional time matrix | Extends self-attention with time matrix T to condition attention weights on temporal context via time-aware dot products | [📄](https://aclanthology.org/2022.findings-naacl.114/) | [💾](https://github.com/GuyRosin/temporal-attention) |
+| **TempRetriever** | Query + Query timestamp + Document + Document timestamp | Passages with temporal + semantic relevance | NYT + ChroniclingAmerica Corpus | Temporal alignment + Temporal understanding | Learned temporal embeddings with fusion techniques + Time-based negative sampling | [📄](https://arxiv.org/abs/2502.21024) | Coming soon |
+| **TsContriever** | Time-sensitive questions | Top-k temporally relevant documents | Nobel Prize benchmark corpus + Wikidata QA pairs | Contrastive learning + Query-side fine-tuning + Query routing | Supervised contrastive learning with time-aware query tuning and routing | [📄](https://dl.acm.org/doi/10.1145/3627673.3679786) | Contact authors |
+| **TempRALM** | Time-sensitive queries | Answer | Knowledge base | Temporal proximity-based document ranking | Temporal scoring | [📄](https://arxiv.org/abs/2410.14333) | Contact authors |
+| **TimeR4** | Time-sensitive queries | Answer (entity or timestamp) | Knowledge base | Retrieve-Rewrite-Retrieve-Rerank pipeline with contrastive learning and LLM finetuning | Temporal fact retrieval, question rewriting, time-aware reranking, and LLM finetuning | [📄](https://aclanthology.org/2024.emnlp-main.408/) | [💾](https://github.com/czy1999/TimeR4) |
+| **MRAG** | Temporal questions + Document | Ranked passages | Wikipedia | Symbolic temporal scoring + Semantic-temporal hybrid ranking | Question decomposition (MC + TC) + Symbolic temporal | [📄](https://arxiv.org/abs/2412.15540) | Coming soon |
+
+**Table Notes:**
+- **Type**: Architectural paradigm (Encoder, Encoder-Decoder, RAG, etc.)
+- **Temporal Representation**: Whether temporal information is explicit or implicit
+- **Temporal Signals**: What temporal cues the model uses
+- **Processing**: Core mechanisms for handling temporal information
+- **Methodology**: Training strategy or modeling paradigm
+
+---
+
+## 📈 Method Statistics
+
+### By Method Type
+
+| Type | Count | Methods |
+|------|-------|---------|
+| **Encoder-only** | 5 | TempoBERT, BiTimeBERT, TALM, TSM, Temporal Attention |
+| **Encoder-Decoder** | 1 | TempoT5 |
+| **Neural Retrieval** | 2 | TempRetriever, TsContriever |
+| **RAG Systems** | 3 | TempRALM, TimeR4, MRAG |
+
+### By Temporal Representation
+
+| Representation Type | Count | Methods |
+|-------------------|-------|---------|
+| **Explicit Timestamps** | 6 | TempoT5, TempoBERT, BiTimeBERT, Temporal Attention, TempRALM, TimeR4 |
+| **Implicit Temporal** | 3 | TALM, SG-TLM, TSM |
+| **Explicit + Implicit** | 3 | TempRetriever, TsContriever, MRAG |
+
+### By Primary Task
+
+| Task | Count | Methods |
+|------|-------|---------|
+| **TQA** | 9 | TempoT5, BiTimeBERT, SG-TLM, TSM, TempRetriever, TsContriever, TempRALM, TimeR4, MRAG |
+| **Semantic Change Detection** | 2 | TempoBERT, Temporal Attention |
+| **Document/Event Dating** | 2 | BiTimeBERT, TALM |
+| **Temporal Language Modeling** | 2 | SG-TLM, TSM |
+
+### By Year
+
+| Year | Count | Methods |
+|------|-------|---------|
+| **2022** | 3 | TempoT5, TempoBERT, Temporal Attention |
+| **2023** | 3 | BiTimeBERT, TALM, SG-TLM, TSM |
+| **2024** | 4 | TsContriever, TempRALM, TimeR4, MRAG |
+| **2025** | 1 | TempRetriever |
+
+---
+
+## 🏗️ Architectural Categories
+
+### Temporal Language Models (Pretraining-based)
+
+| Method | Architecture Base | Temporal Innovation | Training Corpus |
+|--------|------------------|---------------------|-----------------|
+| **TempoT5** | T5 | Temporal prefix conditioning | CUSTOMNEWS + TEMPLAMA |
+| **TempoBERT** | BERT | Time token masking | News corpus |
+| **BiTimeBERT** | BERT | Dual temporal encoding (timestamp + content) | NYT corpus |
+| **TALM** | BERT | Hierarchical temporal word representations | Historical texts |
+| **SG-TLM** | BERT | Syntax-guided + temporal masking | WMT News + Reddit |
+| **TSM** | T5 | Temporal span masking | Wikipedia |
+| **Temporal Attention** | Transformer | Time matrix in attention | SemEval datasets |
+
+### Temporal RAG Systems (Retrieval-based)
+
+| Method | Pipeline Stages | Retrieval Strategy | Generation Model |
+|--------|----------------|-------------------|------------------|
+| **TempRetriever** | Single-stage retrieval | Fusion-based temporal embeddings | - |
+| **TsContriever** | Single-stage retrieval | Contrastive learning | - |
+| **TempRALM** | Retrieve → Generate | Temporal proximity ranking | LLM |
+| **TimeR4** | Retrieve → Rewrite → Retrieve → Rerank | Multi-stage with query rewriting | LLaMA2 |
+| **MRAG** | Question Processing → Retrieval → Summarization → Ranking | Modular with symbolic temporal scoring | LLM |
 
 ## 🏗️ Architecture Patterns
 
@@ -141,179 +214,23 @@ Text → Event/Relation Extraction → Temporal Graph → Reasoning
 
 ---
 
-## 📊 Performance Comparison
-
-### On Standard Benchmarks
-
-#### TimeQA Benchmark
-
-| Method | Exact Match | F1 | Year |
-|--------|-------------|----|----|
-| TempoT5 | 51.2 | 63.4 | 2022 |
-| BiTimeBERT | 48.7 | 61.8 | 2023 |
-| TimeR4 | 54.3 | 67.1 | 2024 |
-| GPT-4 (zero-shot) | 42.1 | 55.9 | 2024 |
-
-#### TempLAMA Benchmark
-
-| Method | Accuracy | Year |
-|--------|----------|------|
-| TempoT5 | 67.8 | 2022 |
-| TALM | 63.2 | 2023 |
-| BiTimeBERT | 71.4 | 2023 |
-| GPT-3.5 | 58.3 | 2023 |
-
-#### ComplexTempQA
-
-| Method | EM | F1 | Multi-hop EM | Year |
-|--------|----|----|--------------|------|
-| MRAG | 43.7 | 58.2 | 38.4 | 2024 |
-| TimeR4 | 41.2 | 56.8 | 35.1 | 2024 |
-| T5-Large | 35.8 | 49.3 | 28.2 | 2024 |
-
-*Note: Results may vary by test set and evaluation protocol*
-
----
-
-## 🎯 Design Decisions & Tradeoffs
-
-### Temporal Signal Representation
-
-| Approach | Pros | Cons | Methods |
-|----------|------|------|---------|
-| **Explicit Timestamps** | Clear signal, easy to implement | Requires metadata, limited to dated content | TempoT5, BiTimeBERT |
-| **Learned Temporal Tokens** | Flexible, captures implicit time | Requires pretraining, less interpretable | TempoBERT, TALM |
-| **Time-aware Attention** | Fine-grained control | Architectural changes needed | Temporal Attention |
-| **Retrieval-based** | No model changes, updateable | Dependent on retrieval quality | TimeR4, MRAG |
-
-### Training Strategies
-
-| Strategy | Best For | Challenges | Examples |
-|----------|----------|------------|----------|
-| **Pretraining from scratch** | Maximum temporal awareness | Computationally expensive | TALM, TempoBERT |
-| **Continued pretraining** | Adapting existing models | Catastrophic forgetting risk | ECONET, SG-TLM |
-| **Fine-tuning only** | Task-specific performance | Limited temporal generalization | Many baselines |
-| **Prompt engineering** | No training needed | Inconsistent, requires large models | Time-aware prompting |
-
-### Temporal Reasoning Approaches
-
-| Approach | Reasoning Type | Complexity | Methods |
-|----------|---------------|------------|---------|
-| **End-to-end neural** | Implicit, learned | Low implementation | TempoT5, BiTimeBERT |
-| **Structured extraction** | Explicit, symbolic | Medium | TIMERS, ConTempo |
-| **Neuro-symbolic hybrid** | Combined | High | TreMu |
-| **Retrieval augmented** | External memory | Medium | TimeR4, MRAG |
-
----
-
-## 🔬 Research Trends
-
-### 2020-2022: Temporal Pretraining
-
-**Focus**: Incorporating time into language model pretraining
-
-**Key Works**:
-- TempoT5: Temporal conditioning
-- TempoBERT: Time masking
-- BiTimeBERT: Dual temporal encoding
-
-**Impact**: Established that temporal signals improve downstream performance
-
-### 2023-2024: Retrieval Augmentation
-
-**Focus**: Dynamic knowledge through retrieval
-
-**Key Works**:
-- TimeR4: Multi-stage retrieval
-- TempRetriever: Dense temporal retrieval
-- MRAG: Modular temporal RAG
-
-**Impact**: Shifted from static to dynamic temporal knowledge
-
-### 2024-2025: Reasoning & Robustness
-
-**Focus**: Explicit reasoning and temporal robustness
-
-**Key Works**:
-- Test of Time: Reasoning evaluation
-- TRAM: Multi-dimensional assessment
-- Timeline Self-Reflection: Iterative reasoning
-
-**Impact**: Exposed fundamental limitations, pushed towards interpretable reasoning
-
----
-
-## 🛠️ Implementation Guide
-
-### Starting a New Temporal QA Project
-
-**Step 1: Choose Your Base Model**
-- For efficiency: TempoBERT, BiTimeBERT (encoder-only)
-- For generation: TempoT5, T5 with temporal prompting
-- For retrieval: TempRetriever, TsContriever
-
-**Step 2: Select Training Strategy**
-- Have timestamps? Use explicit temporal encoding
-- Large corpus? Consider temporal pretraining
-- Limited data? Use RAG approaches
-
-**Step 3: Evaluation**
-- Use multiple benchmarks (TimeQA, TempLAMA, ComplexTempQA)
-- Test temporal robustness (TRAM, TODAY)
-- Measure knowledge update capability (StreamingQA)
-
-### Common Pitfalls
-
-❌ **Pitfall 1**: Ignoring temporal metadata  
-✅ **Solution**: Always incorporate document timestamps when available
-
-❌ **Pitfall 2**: Training only on explicit temporal expressions  
-✅ **Solution**: Include implicit temporal language (seasonal references, contextual time)
-
-❌ **Pitfall 3**: Not testing temporal robustness  
-✅ **Solution**: Use perturbation tests, check consistency across time references
-
-❌ **Pitfall 4**: Assuming static knowledge  
-✅ **Solution**: Implement update mechanisms or use RAG
-
----
-
-## 📚 Detailed Documentation
-
-- [📘 Temporal Language Models →](temporal_lms.md) - Architecture details, training objectives
-- [🔍 Temporal RAG Systems →](temporal_rag.md) - Pipeline designs, retrieval strategies
-- [🧠 Temporal Reasoning →](temporal_reasoning.md) - Reasoning mechanisms, evaluation
-- [📜 Classical Methods →](classical.md) - Historical approaches, foundations
-- [📊 Evaluation Methods →](evaluation.md) - Benchmarking, metrics
-
----
-
-## 🔄 Staying Updated
-
-**Follow these venues for latest methods**:
-- ACL/EMNLP (main NLP conferences)
-- SIGIR/ECIR (information retrieval)
-- NeurIPS/ICML (machine learning)
-- TACL (transactions journal)
-
-**Key research groups**:
-- Google Research (TempoT5, TempLAMA)
-- DeepMind (StreamingQA)
-- CMU (temporal reasoning)
-- University of Innsbruck (temporal IR/QA)
-
----
 
 ## 📝 Contributing
 
-To add a new method:
-1. Create entry in appropriate category table
-2. Add to comparison tables with results
-3. Include paper link and code (if available)
-4. Update statistics at top
+We welcome contributions to keep this survey comprehensive and up-to-date!
 
-[Open an issue](../../issues)!
+### Missing a Paper or Dataset?
 
+If we've missed your work or you know of a relevant paper/dataset that should be included, please send us an email at:
+
+📧 **[bhawna.piryani@uibk.ac.at](mailto:bhawna.piryani@uibk.ac.at)**
+
+Please include:
+- Paper title and authors
+- Link to paper and code/data (if available)
+- Brief description of the contribution
+
+You can also [open an issue](../../issues) on GitHub.
 ---
 
 [← Back to Main README](../../README.md)
