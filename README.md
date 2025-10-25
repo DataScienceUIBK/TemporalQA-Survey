@@ -59,7 +59,7 @@ Time shapes how we:
 ### Quick Statistics
 - **27+ TQA Datasets** covering diverse domains and temporal scopes
 - **2.5M+ Questions** spanning historical archives (1367) to real-time web (2025)
-- **8 Dataset Categories**: Diachronic, Synchronic, Web-based, Synthetic, KG-based
+- **Dataset Categories**: Diachronic, Synchronic, Web-based, Synthetic, KG-based
 
 
 ### Featured Datasets
@@ -69,13 +69,13 @@ Time shapes how we:
 
 | Dataset | Year | #Questions | Source | Time Coverage | Answer Type | Links |
 |---------|------|-----------|--------|---------------|-------------|-------|
-| **ArchivalQA** | 2022 | 532K | NYT Corpus | 1987-2007 | Extractive | [Paper]((https://dl.acm.org/doi/10.1145/3477495.3531734)) · [GitHub]((https://github.com/WangJiexin/ArchivalQA)) |
+| **ArchivalQA** | 2022 | 532K | NYT Corpus | 1987-2007 | Extractive | [Paper](https://dl.acm.org/doi/10.1145/3477495.3531734) · [GitHub](https://github.com/WangJiexin/ArchivalQA) |
 | **ChroniclingAmericaQA** | 2024 | 485K | Historical Newspapers | 1800-1920 | Extractive | [Paper](https://dl.acm.org/doi/10.1145/3626772.3657887) · [GitHub](https://github.com/datascienceUIBK/ChroniclingAmericaQA) |
 | **StreamingQA** | 2022 | 147K | News Articles | 2007-2020 | Extractive | [Paper](https://proceedings.mlr.press/v162/liska22a.html) · [GitHub](https://github.com/deepmind/streamingqa) |
 | **NewsQA** | 2017 | 119K | CNN/Daily Mail | 2007-2015 | Freeform | [Paper](https://aclanthology.org/W17-2623/) · [GitHub](https://github.com/Maluuba/newsqa) |
-| **TempLAMA** | 2022 | 50K | News | 2010-2020 | Extractive | [Paper]((https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00459/110012/Time-Aware-Language-Models-as-Temporal-Knowledge)) · [GitHub](https://github.com/google-research/language/tree/master/language/templama) |
+| **TempLAMA** | 2022 | 50K | News | 2010-2020 | Extractive | [Paper](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00459/110012/Time-Aware-Language-Models-as-Temporal-Knowledge) · [GitHub](https://github.com/google-research/language/tree/master/language/templama) |
 | **TORQUE** | 2020 | 21K | News | - | Abstractive | [Paper](https://aclanthology.org/2020.emnlp-main.88/) · [GitHub](https://github.com/rujunhan/TORQUE) |
-| **ForecastQA** | 2021 | 10.3K | News | 2015-2019 | Multiple Choice | [Paper](https://aclanthology.org/2021.acl-long.357/) · [Website]((https://inklab.usc.edu/ForecastQA/index.html)) |
+| **ForecastQA** | 2021 | 10.3K | News | 2015-2019 | Multiple Choice | [Paper](https://aclanthology.org/2021.acl-long.357/) · [Website](https://inklab.usc.edu/ForecastQA/index.html) |
 | **TDDiscourse** | 2019 | 6.1K | News | Unspecified | Extractive | [Paper](https://aclanthology.org/W19-5929/) · [GitHub](https://github.com/aakanksha19/TDDiscourse) |
 
 </details>
