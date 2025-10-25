@@ -122,10 +122,6 @@ Time shapes how we:
 
 ### 📚 [View Complete Dataset Analysis →](docs/datasets/)
 
-**Detailed breakdowns available:**
-- [Diachronic Document Collections](docs/datasets/diachronic.md)
-- [Synchronic Document Collections](docs/datasets/synchronic.md)
-- [Annotated Temporal Corpora](docs/datasets/annotated.md)
 
 ---
 
@@ -163,7 +159,7 @@ Time shapes how we:
 | **TCQA** | 2023 | Synthetic QA + span selection | T5-based | [Paper](https://aclanthology.org/2023.findings-emnlp.6/) | [Github](https://github.com/sonjbin/TCQA) |
 | **Time-aware Prompting** | 2022 | Temporal prompts for generation | GPT-2 + temporal prompts | [Paper](https://aclanthology.org/2022.findings-emnlp.535/) | [GitHub](https://shuyangcao.github.io/projects/temporal_prompt_generation/) |
 
-**📖 [Detailed comparison with training objectives →](docs/methods/temporal_lms.md)**
+<!-- **📖 [Detailed comparison with training objectives →](docs/methods/temporal_lms.md)** -->
 
 </details>
 
@@ -179,7 +175,7 @@ Time shapes how we:
 | **TsContriever** | 2024 | Contrastive time-sensitive retrieval | Time-aware embeddings | [Paper](https://dl.acm.org/doi/10.1145/3627673.3679800) | [Github](https://github.com/suzhou-22/TS-Retriever) |
 | **FreshLLMs** | 2024 | Search augmentation for recency | Web search integration | [Paper](https://aclanthology.org/2024.findings-acl.820/) | [GitHub](https://github.com/freshllms/freshqa) |
 
-<!-- **🔧 [Implementation details & architecture comparisons →](docs/methods/temporal_rag.md)**
+<!-- **🔧 [Implementation details & architecture comparisons →](docs/methods/temporal_rag.md)** -->
 
 </details>
 
@@ -195,7 +191,7 @@ Time shapes how we:
 | **TODAY** | 2023 | Differential analysis | Temporal robustness testing | [Paper](https://aclanthology.org/2023.acl-long.667/) | [GitHub](https://github.com/DanielFeng0619/TODAY) |
 | **Narrative-of-Thought** | 2024 | Narrative-based reasoning | Recounted narratives for coherence | [Paper](https://aclanthology.org/2024.findings-emnlp.962/) | [GitHub](https://github.com/launchnlp/NoT) |
 
-<!-- **🧩 [Reasoning mechanisms & benchmarks →](docs/methods/temporal_reasoning.md)**
+<!-- **🧩 [Reasoning mechanisms & benchmarks →](docs/methods/temporal_reasoning.md)** -->
 
 </details>
 
