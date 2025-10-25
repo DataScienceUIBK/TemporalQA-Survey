@@ -226,10 +226,10 @@ Core temporal prediction tasks supporting TQA systems:
 
 | Task | Input | Output | Key Applications | Representative Papers |
 |------|-------|--------|-----------------|---------------------|
-| **Event Dating** | Event description | Event timestamp | Historical analysis, timeline construction | [Das et al., 2017](https://dl.acm.org/doi/10.1145/3132847.3133022), [Wang et al., 2021](https://dl.acm.org/doi/10.1145/3404835.3462871) |
-| **Document Dating** | Document text | Creation date | Digital preservation, metadata recovery | [Kumar et al., 2012](https://arxiv.org/abs/1211.2290), [Vashishth et al., 2018](https://aclanthology.org/P18-1149/) |
+| **Event Dating** | Event description | Event timestamp | Historical analysis, timeline construction |[Das et al., 2017](https://dl.acm.org/doi/10.1145/3132847.3133022), [Wang et al., 2021](https://dl.acm.org/doi/10.1145/3404835.3462871) |
+| **Document Dating** | Document text | Creation date | Digital preservation, metadata recovery | [Kumar et al., 2012](https://arxiv.org/abs/1211.2290), [Niculae et al. 2014](https://aclanthology.org/E14-4004/), [Vashishth et al. 2018](https://aclanthology.org/P18-1149/), [Jatowt et al. 2007](https://dl.acm.org/doi/10.1145/1316902.1316925), [SalahEldeen and Nelson, 2013](https://dl.acm.org/doi/10.1145/2487788.2488121)  |
 | **Focus Time Estimation** | Document content | Discussed time period | Historical QA, event-centric retrieval | [Jatowt et al., 2013](https://dl.acm.org/doi/10.1145/2505515.2505549), [Shrivastava et al., 2017](https://link.springer.com/chapter/10.1007/978-3-319-71928-3_25) |
-| **Query Time Profiling** | Search query | Temporal intent/distribution | Time-aware search, query understanding | [Kanhabua & Nørvåg, 2010](https://link.springer.com/chapter/10.1007/978-3-642-15464-5_27), [Dakka et al., 2008](https://dl.acm.org/doi/10.1145/1458082.1458417) |
+| **Query Time Profiling** | Search query | Temporal intent/distribution | Time-aware search, query understanding | [Kanhabua & Nørvåg, 2010](https://link.springer.com/chapter/10.1007/978-3-642-15464-5_27),[Jones and Diaz 2007](https://dl.acm.org/doi/10.1145/1247715.1247720) [Dakka et al., 2008](https://dl.acm.org/doi/abs/10.1145/1458082.1458320), [Gupta and Berberich 2014](https://dl.acm.org/doi/abs/10.1145/2661829.2661927) |
 
 ### 📋 [Detailed Task Descriptions & Methodologies →](docs/tasks/)
 
