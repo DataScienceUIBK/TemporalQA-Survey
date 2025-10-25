@@ -151,34 +151,34 @@ Time shapes how we:
 ### Method Categories
 
 <details open>
-<summary><b>🤖 Temporal Language Models (Click to expand all 9 models)</b></summary>
+<summary><b>🤖 Temporal Language Models (Click to expand all models)</b></summary>
 
 | Model | Year | Key Innovation | Architecture | Paper | Code |
 |-------|------|----------------|--------------|-------|------|
 | **TempoT5** | 2022 | Temporal conditioning via prefixes | T5 + timestamp prefixes | [Paper](https://aclanthology.org/2022.tacl-1.16/) | [GitHub](https://github.com/google-research/language/tree/master/language/templama) |
-| **BiTimeBERT** | 2023 | Dual temporal encoding (timestamp + content) | BERT + bi-temporal module | [Paper](https://dl.acm.org/doi/10.1145/3539618.3591675) | Available upon request |
-| **TempoBERT** | 2022 | Time-aware masking strategy | BERT + temporal masking | [Paper](https://dl.acm.org/doi/10.1145/3488560.3498529) | [GitHub](https://github.com/GuyRosin/TempoBERT) |
-| **TALM** | 2023 | Hierarchical temporal word representations | BERT + temporal adapter | [Paper](https://aclanthology.org/2023.findings-emnlp.908/) | Contact authors |
-| **SG-TLM** | 2023 | Syntax-guided + temporal-aware masking | BERT + dual masking | [Paper](https://aclanthology.org/2023.findings-emnlp.425/) | [GitHub](https://github.com/szhaochen/SG-TLM) |
-| **TSM** | 2023 | Temporal span masking | T5 + salient span masking | [Paper](https://aclanthology.org/2023.eacl-main.221/) | Contact authors |
-| **Temporal Attention** | 2022 | Time matrix in attention mechanism | Transformer + time matrix | [Paper](https://aclanthology.org/2022.findings-naacl.114/) | [GitHub](https://github.com/GuyRosin/temporal-attention) |
-| **TCQA** | 2023 | Synthetic QA + span selection | T5-based | [Paper](https://aclanthology.org/2023.findings-emnlp.5/) | Contact authors |
-| **Time-aware Prompting** | 2022 | Temporal prompts for generation | GPT-2 + temporal prompts | [Paper](https://aclanthology.org/2022.findings-emnlp.533/) | [GitHub](https://github.com/yuchenlin/TimePrompt) |
+| **BiTimeBERT** | 2023 | Dual temporal encoding (timestamp + content) | BERT + bi-temporal module | [Paper](https://dl.acm.org/doi/10.1145/3539618.3591686) | [Github](https://github.com/WangJiexin/BiTimeBERT) |
+| **TempoBERT** | 2022 | Time-aware masking strategy | BERT + temporal masking | [Paper](https://dl.acm.org/doi/10.1145/3488560.3498529) | [GitHub](https://github.com/guyrosin/tempobert) |
+| **TALM** | 2023 | Hierarchical temporal word representations | BERT + temporal adapter | [Paper](https://aclanthology.org/2023.findings-emnlp.911/) | [Github](https://github.com/coderlihong/text-dating) |
+| **SG-TLM** | 2023 | Syntax-guided + temporal-aware masking | BERT + dual masking | [Paper](https://aclanthology.org/2023.findings-emnlp.418/) | [GitHub](https://github.com/zhaochen0110/TempoLM) |
+| **TSM** | 2023 | Temporal span masking | T5 + salient span masking | [Paper](https://aclanthology.org/2023.eacl-main.222/) | Contact authors |
+| **Temporal Attention** | 2022 | Time matrix in attention mechanism | Transformer + time matrix | [Paper](https://aclanthology.org/2022.findings-naacl.112/) | [GitHub](https://github.com/guyrosin/temporal_attention) |
+| **TCQA** | 2023 | Synthetic QA + span selection | T5-based | [Paper](https://aclanthology.org/2023.findings-emnlp.6/) | [Github](https://github.com/sonjbin/TCQA) |
+| **Time-aware Prompting** | 2022 | Temporal prompts for generation | GPT-2 + temporal prompts | [Paper](https://aclanthology.org/2022.findings-emnlp.535/) | [GitHub](https://shuyangcao.github.io/projects/temporal_prompt_generation/) |
 
 **📖 [Detailed comparison with training objectives →](docs/methods/temporal_lms.md)**
 
 </details>
 
 <details>
-<summary><b>🔍 Temporal RAG Systems (Click to expand all 6 systems)</b></summary>
+<summary><b>🔍 Temporal RAG Systems (Click to expand all systems)</b></summary>
 
 | System | Year | Pipeline Architecture | Temporal Signals | Paper | Code |
 |--------|------|----------------------|------------------|-------|------|
-| **TempRetriever** | 2025 | Fusion-based dense retrieval | Query + doc timestamps | [Paper](https://arxiv.org/abs/2502.21024) | Coming soon |
-| **TimeR4** | 2024 | Retrieve-Rewrite-Retrieve-Rerank | TKG timestamps + constraints | [Paper](https://aclanthology.org/2024.emnlp-main.408/) | [GitHub](https://github.com/czy1999/TimeR4) |
-| **MRAG** | 2024 | Modular multi-hop framework | Symbolic + semantic temporal scoring | [Paper](https://arxiv.org/abs/2412.15540) | Coming soon |
-| **TempRALM** | 2024 | Dense retrieval + temporal proximity | Timestamp-based ranking | [Paper](https://arxiv.org/abs/2410.14333) | Contact authors |
-| **TsContriever** | 2024 | Contrastive time-sensitive retrieval | Time-aware embeddings | [Paper](https://dl.acm.org/doi/10.1145/3627673.3679786) | Contact authors |
+| **TempRetriever** | 2025 | Fusion-based dense retrieval | Query + doc timestamps | [Paper](https://arxiv.org/abs/2502.21024) | Contact authors |
+| **TimeR4** | 2024 | Retrieve-Rewrite-Retrieve-Rerank | TKG timestamps + constraints | [Paper](https://aclanthology.org/2024.emnlp-main.394/) | [GitHub](https://github.com/qianxinying/TimeR4) |
+| **MRAG** | 2024 | Modular multi-hop framework | Symbolic + semantic temporal scoring | [Paper](https://arxiv.org/abs/2412.15540) | Contact authors |
+| **TempRALM** | 2024 | Dense retrieval + temporal proximity | Timestamp-based ranking | [Paper](https://arxiv.org/abs/2401.13222) | Contact authors |
+| **TsContriever** | 2024 | Contrastive time-sensitive retrieval | Time-aware embeddings | [Paper](https://dl.acm.org/doi/10.1145/3627673.3679800) | [Github](https://github.com/suzhou-22/TS-Retriever) |
 | **FreshLLMs** | 2024 | Search augmentation for recency | Web search integration | [Paper](https://aclanthology.org/2024.findings-acl.820/) | [GitHub](https://github.com/freshllms/freshqa) |
 
 **🔧 [Implementation details & architecture comparisons →](docs/methods/temporal_rag.md)**
@@ -186,18 +186,16 @@ Time shapes how we:
 </details>
 
 <details>
-<summary><b>🧠 Temporal Reasoning Methods (Click to expand all 8 approaches)</b></summary>
+<summary><b>🧠 Temporal Reasoning Methods (Click to expand all approaches)</b></summary>
 
 | Method | Year | Reasoning Type | Key Contribution | Paper | Code |
 |--------|------|----------------|------------------|-------|------|
-| **ECONET** | 2021 | Continual adaptation | Event consistency across updates | [Paper](https://aclanthology.org/2021.emnlp-main.436/) | [GitHub](https://github.com/rujunhan/ECONET) |
-| **ConTempo** | 2024 | Contrastive temporal relations | Unified temporal relation extraction | [Paper](https://aclanthology.org/2024.findings-acl.90/) | [GitHub](https://github.com/JingchengNiu/ConTempo) |
+| **ECONET** | 2021 | Continual adaptation | Event consistency across updates | [Paper](https://aclanthology.org/2021.emnlp-main.436/) | [GitHub](https://github.com/PlusLabNLP/ECONET) |
+| **ConTempo** | 2024 | Contrastive temporal relations | Unified temporal relation extraction | [Paper](https://aclanthology.org/2024.findings-acl.89/) | [GitHub](https://github.com/frankniujc/contempo) |
 | **TIMERS** | 2021 | Document-level relations | Structured inference layers | [Paper](https://aclanthology.org/2021.acl-short.67/) | [GitHub](https://github.com/PuneetMathur/TIMERS) |
-| **TRAM** | 2024 | Multi-dimensional reasoning | Event frequency, duration, ordering | [Paper](https://aclanthology.org/2024.findings-acl.380/) | [GitHub](https://github.com/DAMO-NLP-SG/TRAM) |
+| **TRAM** | 2024 | Multi-dimensional reasoning | Event frequency, duration, ordering | [Paper](https://aclanthology.org/2024.findings-acl.382.pdf) | [GitHub](https://github.com/EternityYW/TRAM-Benchmark) |
 | **TODAY** | 2023 | Differential analysis | Temporal robustness testing | [Paper](https://aclanthology.org/2023.acl-long.667/) | [GitHub](https://github.com/DanielFeng0619/TODAY) |
-| **Narrative-of-Thought** | 2024 | Narrative-based reasoning | Recounted narratives for coherence | [Paper](https://aclanthology.org/2024.findings-emnlp.962/) | [GitHub](https://github.com/zhangfx19/Narrative-of-Thought) |
-| **Timeline Self-Reflection** | 2025 | Self-reflective reasoning | Iterative timeline construction | [Paper](https://arxiv.org/abs/2504.05258) | Coming soon |
-| **TreMu** | 2025 | Neuro-symbolic with memory | Multi-session dialogue memory | [Paper](https://arxiv.org/abs/2502.01630) | Coming soon |
+| **Narrative-of-Thought** | 2024 | Narrative-based reasoning | Recounted narratives for coherence | [Paper](https://aclanthology.org/2024.findings-emnlp.962/) | [GitHub](https://github.com/launchnlp/NoT) |
 
 **🧩 [Reasoning mechanisms & benchmarks →](docs/methods/temporal_reasoning.md)**
 
@@ -208,9 +206,9 @@ Time shapes how we:
 
 | Era | Methods | Key Papers |
 |-----|---------|------------|
-| **Rule-Based** | TimeML, TERSEO, temporal taggers | [Harabagiu & Bejan, 2005](https://www.aaai.org/Papers/Workshops/2005/WS-05-07/WS05-07-005.pdf), [Saquete et al., 2009](https://www.jair.org/index.php/jair/article/view/10640) |
-| **Statistical IR** | Time-based language models, temporal ranking | [Li & Croft, 2003](https://dl.acm.org/doi/10.1145/956863.956951), [Berberich et al., 2010](https://link.springer.com/chapter/10.1007/978-3-642-12275-0_5) |
-| **Early Neural** | Temporal word embeddings, GCN-based dating | [Vashishth et al., 2018](https://aclanthology.org/P18-1149/) |
+| **Rule-Based** | TimeML, TERSEO, temporal taggers | [Harabagiu & Bejan, 2005](https://cdn.aaai.org/Workshops/2005/WS-05-05/WS05-05-005.pdf), [Saquete et al., 2004](https://aclanthology.org/P04-1072.pdf), [Saquete et al., 2004](https://dl.acm.org/doi/10.5555/1641503.1641521) |
+| **Statistical IR** | Time-based language models, temporal ranking | [Li & Croft, 2003](https://dl.acm.org/doi/abs/10.1145/956863.956951), [Berberich et al., 2010](https://link.springer.com/chapter/10.1007/978-3-642-12275-0_5), [Arikan et al., 2009](https://scispace.com/pdf/time-will-tell-leveraging-temporal-expressions-in-ir-1p6nfuycpe.pdf), [Alonso et al., 2007](https://dl.acm.org/doi/10.1145/1328964.1328968), [](), [](), |
+
 
 **📚 [Complete historical overview →](docs/methods/classical.md)**
 
@@ -228,7 +226,7 @@ Core temporal prediction tasks supporting TQA systems:
 |------|-------|--------|-----------------|---------------------|
 | **Event Dating** | Event description | Event timestamp | Historical analysis, timeline construction |[Das et al., 2017](https://dl.acm.org/doi/10.1145/3132847.3133022), [Wang et al., 2021](https://dl.acm.org/doi/10.1145/3404835.3462871) |
 | **Document Dating** | Document text | Creation date | Digital preservation, metadata recovery | [Kumar et al., 2012](https://arxiv.org/abs/1211.2290), [Niculae et al. 2014](https://aclanthology.org/E14-4004/), [Vashishth et al. 2018](https://aclanthology.org/P18-1149/), [Jatowt et al. 2007](https://dl.acm.org/doi/10.1145/1316902.1316925), [SalahEldeen and Nelson, 2013](https://dl.acm.org/doi/10.1145/2487788.2488121)  |
-| **Focus Time Estimation** | Document content | Discussed time period | Historical QA, event-centric retrieval | [Jatowt et al., 2013](https://dl.acm.org/doi/10.1145/2505515.2505549), [Shrivastava et al., 2017](https://link.springer.com/chapter/10.1007/978-3-319-71928-3_25) |
+| **Focus Time Estimation** | Document content | Discussed time period | Historical QA, event-centric retrieval | [Jatowt et al., 2013](https://dl.acm.org/doi/10.1145/2505515.2505655), [Jatowt et al., 2013](https://dl.acm.org/doi/10.1016/j.ipm.2015.05.001), [Shrivastava et al., 2017](https://link.springer.com/chapter/10.1007/978-3-319-71928-3_25) |
 | **Query Time Profiling** | Search query | Temporal intent/distribution | Time-aware search, query understanding | [Kanhabua & Nørvåg, 2010](https://link.springer.com/chapter/10.1007/978-3-642-15464-5_27),[Jones and Diaz 2007](https://dl.acm.org/doi/10.1145/1247715.1247720) [Dakka et al., 2008](https://dl.acm.org/doi/abs/10.1145/1458082.1458320), [Gupta and Berberich 2014](https://dl.acm.org/doi/abs/10.1145/2661829.2661927) |
 
 ### 📋 [Detailed Task Descriptions & Methodologies →](docs/tasks/)
