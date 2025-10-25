@@ -5,13 +5,13 @@ This directory contains comprehensive documentation of all Temporal QA datasets,
 
 ## 📁 Directory Structure
 
-- [**Diachronic Corpora**](diachronic.md) - Time-stamped historical documents
-- [**Synchronic Corpora**](synchronic.md) - Wikipedia snapshots at specific points in time
-- [**Annotated Temporal Corpora**](annotated.md) - Explicitly annotated with TimeML/temporal relations
-- [**Web & Real-Time**](web_realtime.md) - Live search and periodically updated datasets
-- [**Synthetic & Specialized**](synthetic.md) - Generated datasets for specific reasoning tasks
-- [**Knowledge Graph-Based**](knowledge_graphs.md) - Structured temporal KG datasets
-- [**Domain-Specific**](domain_specific.md) - Medical, Legal, Financial
+- **Diachronic Corpora** - Time-stamped historical documents
+- **Synchronic Corpora** - Wikipedia snapshots at specific points in time
+- **Annotated Temporal Corpora** - Explicitly annotated with TimeML/temporal relations
+- **Web & Real-Time** - Live search and periodically updated datasets
+- **Synthetic & Specialized** - Generated datasets for specific reasoning tasks
+- **Knowledge Graph-Based** - Structured temporal KG datasets
+- **Domain-Specific** - Medical, Legal, Financial
 
 ---
 
@@ -141,12 +141,20 @@ When comparing datasets, consider these dimensions:
 
 ## 📝 Contributing
 
-Found a dataset we missed? Please [open an issue](../../issues):
-- Dataset name and paper
-- Statistics (#questions, time coverage)
-- Links to paper and data
-- Key characteristics
+We welcome contributions to keep this survey comprehensive and up-to-date!
 
+### Missing a Paper or Dataset?
+
+If we've missed your work or you know of a relevant paper/dataset that should be included, please send us an email at:
+
+📧 **[bhawna.piryani@uibk.ac.at](mailto:bhawna.piryani@uibk.ac.at)**
+
+Please include:
+- Paper title and authors
+- Link to paper and code/data (if available)
+- Brief description of the contribution
+
+You can also [open an issue](../../issues) on GitHub.
 ---
 
 [← Back to Main README](../../README.md)
