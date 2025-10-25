@@ -21,10 +21,10 @@ Temporal prediction tasks focus on inferring implicit or missing temporal signal
 
 ## 📁 Directory Structure
 
-- [**Document Dating**](document_dating.md) - Estimating document creation time
-- [**Focus Time Estimation**](focus_time.md) - Identifying time periods discussed in documents
-- [**Event Dating**](event_dating.md) - Determining when events occurred
-- [**Query Time Profiling**](query_time.md) - Understanding temporal intent in queries
+- [**Document Dating**] - Estimating document creation time
+- [**Focus Time Estimation**] - Identifying time periods discussed in documents
+- [**Event Dating**] - Determining when events occurred
+- [**Query Time Profiling**] - Understanding temporal intent in queries
 
 ---
 
