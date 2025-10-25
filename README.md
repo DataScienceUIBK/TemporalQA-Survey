@@ -69,14 +69,14 @@ Time shapes how we:
 
 | Dataset | Year | #Questions | Source | Time Coverage | Answer Type | Links |
 |---------|------|-----------|--------|---------------|-------------|-------|
-| **ArchivalQA** | 2022 | 532K | NYT Corpus | 1987-2007 | Extractive | [Paper](https://dl.acm.org/doi/10.1145/3477495.3531734) · [GitHub](https://github.com/IBM/ArchivalQA) |
+| **ArchivalQA** | 2022 | 532K | NYT Corpus | 1987-2007 | Extractive | [Paper]((https://dl.acm.org/doi/10.1145/3477495.3531734)) · [GitHub]((https://github.com/WangJiexin/ArchivalQA)) |
 | **ChroniclingAmericaQA** | 2024 | 485K | Historical Newspapers | 1800-1920 | Extractive | [Paper](https://dl.acm.org/doi/10.1145/3626772.3657887) · [GitHub](https://github.com/datascienceUIBK/ChroniclingAmericaQA) |
 | **StreamingQA** | 2022 | 147K | News Articles | 2007-2020 | Extractive | [Paper](https://proceedings.mlr.press/v162/liska22a.html) · [GitHub](https://github.com/deepmind/streamingqa) |
 | **NewsQA** | 2017 | 119K | CNN/Daily Mail | 2007-2015 | Freeform | [Paper](https://aclanthology.org/W17-2623/) · [GitHub](https://github.com/Maluuba/newsqa) |
-| **TempLAMA** | 2022 | 50K | News | 2010-2020 | Extractive | [Paper](https://aclanthology.org/2022.tacl-1.16/) · [GitHub](https://github.com/google-research/language/tree/master/language/templama) |
+| **TempLAMA** | 2022 | 50K | News | 2010-2020 | Extractive | [Paper]((https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00459/110012/Time-Aware-Language-Models-as-Temporal-Knowledge)) · [GitHub](https://github.com/google-research/language/tree/master/language/templama) |
 | **TORQUE** | 2020 | 21K | News | - | Abstractive | [Paper](https://aclanthology.org/2020.emnlp-main.88/) · [GitHub](https://github.com/rujunhan/TORQUE) |
-| **ForecastQA** | 2021 | 10.3K | News | 2015-2019 | Multiple Choice | [Paper](https://aclanthology.org/2021.acl-long.357/) · [GitHub](https://github.com/wjn922/ForecastQA) |
-| **TDDiscourse** | 2019 | 6.1K | News | Unspecified | Extractive | [Paper](https://aclanthology.org/W19-5927/) · [GitHub](https://github.com/aknaik/TDDiscourse) |
+| **ForecastQA** | 2021 | 10.3K | News | 2015-2019 | Multiple Choice | [Paper](https://aclanthology.org/2021.acl-long.357/) · [Website]((https://inklab.usc.edu/ForecastQA/index.html)) |
+| **TDDiscourse** | 2019 | 6.1K | News | Unspecified | Extractive | [Paper](https://aclanthology.org/W19-5929/) · [GitHub](https://github.com/aakanksha19/TDDiscourse) |
 
 </details>
 
@@ -87,14 +87,14 @@ Time shapes how we:
 |---------|------|-----------|-----------|-------------|-----------|-------|
 | **ComplexTempQA** | 2024 | 100.2K | 1987-2023 | Extractive | ✓ | [Paper](https://arxiv.org/abs/2406.04866) · [GitHub](https://github.com/DataScienceUIBK/ComplexTempQA) |
 | **TEMPREASON** | 2023 | 52.8K | 634-2023 | Abstractive | ✗ | [Paper](https://aclanthology.org/2023.acl-long.828/) · [GitHub](https://github.com/DAMO-NLP-SG/TempReason) |
-| **TimeQA** | 2021 | 41.2K | 1367-2018 | Extractive | ✗ | [Paper](https://openreview.net/forum?id=pzDB_n1r_C) · [GitHub](https://github.com/wenhuchen/TimeQA) |
-| **TemporalAlignmentQA** | 2024 | 20K | 2000-2023 | Abstractive | ✗ | [Paper](https://aclanthology.org/2024.findings-acl.891/) |
-| **SituatedQA** | 2021 | 12.2K | ≤ 2021 | Mixed | ✗ | [Paper](https://aclanthology.org/2021.emnlp-main.586/) · [GitHub](https://github.com/situatedqa/situatedqa) |
-| **TempTabQA** | 2023 | 11.4K | Infoboxes | Abstractive | ✗ | [Paper](https://aclanthology.org/2023.emnlp-main.149/) · [GitHub](https://github.com/vivekgupta9/TempTabQA) |
-| **TiQ** | 2024 | 10K | Unspecified | Entities | ✗ | [Paper](https://dl.acm.org/doi/10.1145/3589335.3651529) |
-| **PAT-Questions** | 2024 | 6.1K | Present-anchored | Extractive | ✓ | [Paper](https://aclanthology.org/2024.findings-acl.782/) · [GitHub](https://github.com/vhiribarren/pat-questions) |
-| **TRACIE** | 2021 | 5.4K | ≤ 2020 | Abstractive | ✗ | [Paper](https://aclanthology.org/2021.naacl-main.107/) · [GitHub](https://github.com/CogComp/TRACIE) |
-| **MenatQA** | 2023 | 2.8K | 1367-2018 | Extractive | ✗ | [Paper](https://aclanthology.org/2023.findings-emnlp.99/) · [GitHub](https://github.com/yfyuan01/MenatQA) |
+| **TimeQA** | 2021 | 41.2K | 1367-2018 | Extractive | ✗ | [Paper](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/file/1f0e3dad99908345f7439f8ffabdffc4-Paper-round2.pdf) · [GitHub](https://github.com/wenhuchen/Time-Sensitive-QA) |
+| **TemporalAlignmentQA** | 2024 | 20K | 2000-2023 | Abstractive | ✗ | [Paper](https://aclanthology.org/2024.findings-acl.892.pdf) [Github](https://github.com/yizhongw/llm-temporal-alignment)|
+| **SituatedQA** | 2021 | 12.2K | ≤ 2021 | Mixed | ✗ | [Paper](https://aclanthology.org/2021.emnlp-main.586/) · [GitHub](https://situatedqa.github.io/) |
+| **TempTabQA** | 2023 | 11.4K | Infoboxes | Abstractive | ✗ | [Paper](https://aclanthology.org/2023.emnlp-main.149/) · [Website](https://temptabqa.github.io/) |
+| **TiQ** | 2024 | 10K | Unspecified | Entities | ✗ | [Paper](https://dl.acm.org/doi/10.1145/3589335.3651895) · [GitHub](https://github.com/zhenjia2017/TIQ) |
+| **PAT-Questions** | 2024 | 6.1K | Present-anchored | Extractive | ✓ | [Paper](https://aclanthology.org/2024.findings-acl.777/) · [GitHub](https://github.com/jannatmeem95/PAT-Questions) |
+| **TRACIE** | 2021 | 5.4K | ≤ 2020 | Abstractive | ✗ | [Paper](https://aclanthology.org/2021.naacl-main.107/) · [GitHub](https://github.com/allenai/tracie) |
+| **MenatQA** | 2023 | 2.8K | 1367-2018 | Extractive | ✗ | [Paper](https://aclanthology.org/2023.findings-emnlp.100/) · [GitHub](https://github.com/weiyifan1023/MenatQA) |
 
 </details>
 
@@ -103,8 +103,8 @@ Time shapes how we:
 
 | Dataset | Year | #Questions | Source | Update Frequency | Links |
 |---------|------|-----------|--------|------------------|-------|
-| **ReaLTimeQA** | 2023 | 5.1K | Web Search | Weekly (2020-2024) | [Paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/9a6e9a1519ee1f031b35acb238e97bc2-Abstract-Datasets_and_Benchmarks.html) · [GitHub](https://github.com/realtimeqa/realtimeqa) |
-| **FreshQA** | 2024 | 600 | Google Search | Periodic | [Paper](https://aclanthology.org/2024.findings-acl.820/) · [GitHub](https://github.com/freshllms/freshqa) |
+| **ReaLTimeQA** | 2023 | 5.1K | Web Search | Weekly (2020-2024) | [Paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/9941624ef7f867a502732b5154d30cb7-Paper-Datasets_and_Benchmarks.pdf) · [Website](https://realtimeqa.github.io/) |
+| **FreshQA** | 2024 | 600 | Google Search | Periodic | [Paper]((https://aclanthology.org/2024.findings-acl.813/)) · [GitHub](https://github.com/freshllms/freshqa) |
 
 </details>
 
@@ -114,21 +114,13 @@ Time shapes how we:
 | Dataset | Year | #Questions | Focus | Links |
 |---------|------|-----------|-------|-------|
 | **COTEMPQA** | 2024 | 4.7K | Co-temporal reasoning | [Paper](https://aclanthology.org/2024.acl-long.703/) · [GitHub](https://github.com/zhaochen0110/cotempqa) |
-| **UnSeenTimeQA** | 2024 | 3.6K | Beyond memorization | [Paper](https://arxiv.org/abs/2407.03525) · [GitHub](https://github.com/mdnayeemsarker/UnSeenTimeQA) |
-| **Test of Time (ToT)** | 2024 | 1.8K | Temporal reasoning eval | [Paper](https://arxiv.org/abs/2406.09170) · [GitHub](https://github.com/google-deepmind/test_of_time) |
-| **TIMEDIAL** | 2021 | 1.1K | Temporal commonsense | [Paper](https://aclanthology.org/2021.acl-long.549/) · [GitHub](https://github.com/google-research-datasets/TimeDial) |
+| **UnSeenTimeQA** | 2024 | 3.6K | Beyond memorization | [Paper](https://aclanthology.org/2025.acl-long.94.pdf) · [GitHub](https://github.com/nurakib/UnSeenTimeQA) |
+| **Test of Time (ToT)** | 2024 | 1.8K | Temporal reasoning eval | [Paper](https://arxiv.org/pdf/2406.09170) · [GitHub](https://github.com/ourownstory/test-of-time) |
+| **TIMEDIAL** | 2021 | 1.1K | Temporal commonsense | [Paper](https://aclanthology.org/2021.acl-long.549.pdf) · [GitHub](https://github.com/google-research-datasets/TimeDial) |
 
 </details>
 
-<details>
-<summary><b>📊 Knowledge Graph-Based Datasets</b></summary>
 
-| Dataset | Year | #Questions | KB Source | Links |
-|---------|------|-----------|-----------|-------|
-| **TempQuestions** | 2018 | 1.2K | Freebase | [Paper](https://dl.acm.org/doi/10.1145/3184558.3192172) · [GitHub](https://github.com/zhenjia2017/TempQuestions) |
-| **Complex-TR** | 2024 | 10.8K | Wikipedia + Web | [Paper](https://aclanthology.org/2024.findings-acl.372/) · [GitHub](https://github.com/DAMO-NLP-SG/Complex-TR) |
-
-</details>
 
 ### 📚 [View Complete Dataset Analysis →](docs/datasets/)
 
@@ -251,9 +243,9 @@ Core temporal prediction tasks supporting TQA systems:
 
 | System/Dataset | Focus | Key Paper |
 |----------------|-------|-----------|
-| TimeText | Time-oriented clinical QA | [Zhou et al., 2008](https://academic.oup.com/jamia/article/15/1/99/776108) |
+| TimeText | Time-oriented clinical QA | [Zhou et al., 2008](https://pmc.ncbi.nlm.nih.gov/articles/PMC2274869/) |
 | Temporal Clinical QA | Semantic web techniques | [Tao et al., 2010](https://link.springer.com/chapter/10.1007/978-3-642-17749-1_16) |
-| Time-aware Health QA | Evidence retrieval with recency | [Vladika & Matthes, 2024](https://aclanthology.org/2024.findings-naacl.307/) |
+| Time-aware Health QA | Evidence retrieval with recency | [Vladika & Matthes, 2024](https://aclanthology.org/2024.findings-naacl.295/) |
 
 ### Legal Domain
 
@@ -261,10 +253,7 @@ Core temporal prediction tasks supporting TQA systems:
 
 | System/Dataset | Focus | Key Paper |
 |----------------|-------|-----------|
-| ChronosLex | Time-aware incremental training | [T.y.s.s et al., 2024](https://aclanthology.org/2024.acl-long.167/) |
-| Legal QA (German) | Civil law system | [Büttner & Habernal, 2024](https://aclanthology.org/2024.eacl-long.120/) |
-| JNLPBA | Legal document QA | [Kien et al., 2020](https://aclanthology.org/2020.coling-main.86/) |
-
+| ChronosLex | Time-aware incremental training | [T.y.s.s et al., 2024](https://aclanthology.org/2024.acl-long.166/) |
 ### Financial Domain
 
 **Challenges**: Regulatory changes, market events, time-sensitive numerical reasoning
@@ -272,7 +261,7 @@ Core temporal prediction tasks supporting TQA systems:
 | Dataset | Focus | Key Paper |
 |---------|-------|-----------|
 | FinQA | Numerical reasoning over financial data | [Chen et al., 2021](https://aclanthology.org/2021.emnlp-main.300/) |
-| FinTextQA | Long-form financial QA | [Chen et al., 2024](https://aclanthology.org/2024.acl-long.332/) |
+| FinTextQA | Long-form financial QA | [Chen et al., 2024](https://aclanthology.org/2024.acl-long.328/) |
 | FinDER | Financial QA with RAG | [Choi et al., 2025](https://arxiv.org/abs/2504.15800) |
 
 ### 🏢 [Complete Domain Analysis →](docs/domains/)
@@ -286,24 +275,24 @@ Core temporal prediction tasks supporting TQA systems:
 | Tool | Year | Languages | Type | Features | Link |
 |------|------|-----------|------|----------|------|
 | **HeidelTime** | 2010 | 200+ | Rule-based | High precision, domain adaptation | [Paper](https://aclanthology.org/S10-1071/) · [GitHub](https://github.com/HeidelTime/heideltime) |
-| **SUTime** | 2012 | English | Rule-based | Stanford CoreNLP integration | [Paper](https://aclanthology.org/L12-1015/) · [Website](https://nlp.stanford.edu/software/sutime.html) |
-| **CogCompTime** | 2018 | English | Neural | Compositional temporal understanding | [Paper](https://aclanthology.org/D18-2012/) · [GitHub](https://github.com/CogComp/cogcomp-nlp) |
-| **Temponym Tagger** | 2016 | English | Hybrid | Implicit temporal references | [Paper](https://dl.acm.org/doi/10.1145/2872427.2883017) |
+| **SUTime** | 2012 | English | Rule-based | Stanford CoreNLP integration | [Paper](https://aclanthology.org/L12-1122/) · [Website](https://nlp.stanford.edu/software/sutime.html) |
+| **CogCompTime** | 2018 | English | Neural | Compositional temporal understanding | [Paper](https://aclanthology.org/D18-2013/) · [GitHub](https://github.com/CogComp/cogcomp-nlp) |
+| **Temponym Tagger** | 2016 | English | Hybrid | Implicit temporal references | [Paper](https://dl.acm.org/doi/10.1145/2872518.2889289) |
 
 ### Document Collections
 
 | Collection | Period | Size | Domain | Access |
 |-----------|--------|------|--------|--------|
-| NYT Annotated Corpus | 1987-2007 | 1.8M articles | News | [LDC License](https://catalog.ldc.upenn.edu/LDC2008T19) |
+| NYT Annotated Corpus | 1987-2007 | 1.8M articles | News | [LDC License](https://abacus.library.ubc.ca/dataset.xhtml?persistentId=hdl:11272.1/AB2/GZC6PL) |
 | Chronicling America | 1800-1920 | Historical | Newspapers | [Free Access](https://chroniclingamerica.loc.gov/) |
 | Newswire Corpus | 1878-1977 | 2.7M articles | News | [HuggingFace](https://huggingface.co/datasets/dell-research-harvard/newswire) |
 | Wikipedia Dumps | Various | TB-scale | Encyclopedia | [Wikimedia](https://dumps.wikimedia.org/) |
 
 ### Evaluation Frameworks
 
-- **Temporal Robustness Testing**: [Wallat et al., 2024](https://dl.acm.org/doi/10.1145/3616855.3635814)
-- **TimeBench**: Comprehensive temporal reasoning benchmark ([Chu et al., 2024](https://aclanthology.org/2024.acl-long.68/))
-- **TRAM**: Multi-dimensional temporal reasoning evaluation ([Wang & Zhao, 2024](https://aclanthology.org/2024.findings-acl.380/))
+- **Temporal Robustness Testing**: [Wallat et al., 2024](https://aclanthology.org/2025.findings-acl.810.pdf)
+- **TimeBench**: Comprehensive temporal reasoning benchmark ([Chu et al., 2024](https://aclanthology.org/2024.acl-long.66/))
+- **TRAM**: Multi-dimensional temporal reasoning evaluation ([Wang & Zhao, 2024](https://aclanthology.org/2024.findings-acl.382/))
 
 ### 📦 [Complete Resource Catalog →](docs/resources/)
 
@@ -376,7 +365,7 @@ We highlight open challenges for building truly time-aware systems:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## ✨Citation
-If you find this work useful, please cite [📜our paper](https://arxiv.org/pdf/2505.20243):
+If you find this work useful, please cite [📜our paper](https://arxiv.org/abs/2505.20243):
 ### Plain
 Piryani, B., Abdullah, A., Mozafari, J., Anand, A., & Jatowt, A. (2025). It's High Time: A Survey of Temporal Question Answering. arXiv preprint arXiv:2505.20243.
 ### Bibtex
