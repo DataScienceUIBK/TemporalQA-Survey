@@ -13,11 +13,11 @@ This directory contains comprehensive documentation of all approaches to Tempora
 
 ## 📁 Directory Structure
 
-- [**Temporal Language Models**](temporal_lms.md) - Pre-trained models with temporal awareness
-- [**Temporal RAG Systems**](temporal_rag.md) - Retrieval-augmented generation for TQA
-- [**Temporal Reasoning**](temporal_reasoning.md) - Explicit reasoning mechanisms
-- [**Classical Methods**](classical.md) - Rule-based and statistical approaches (2003-2019)
-- [**Benchmarking & Evaluation**](evaluation.md) - Testing temporal capabilities
+- **Temporal Language Models**- Pre-trained models with temporal awareness
+- **Temporal RAG Systems** - Retrieval-augmented generation for TQA
+- **Temporal Reasoning** - Explicit reasoning mechanisms
+- **Classical Methods** - Rule-based and statistical approaches (2003-2019)
+- **Benchmarking & Evaluation** - Testing temporal capabilities
 
 ---
 
