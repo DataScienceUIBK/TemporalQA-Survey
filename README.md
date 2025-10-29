@@ -102,7 +102,7 @@ Time shapes how we:
 | Dataset | Year | #Questions | Source | Update Frequency | Links |
 |---------|------|-----------|--------|------------------|-------|
 | **ReaLTimeQA** | 2023 | 5.1K | Web Search | Weekly (2020-2024) | [Paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/9941624ef7f867a502732b5154d30cb7-Paper-Datasets_and_Benchmarks.pdf) · [Website](https://realtimeqa.github.io/) |
-| **FreshQA** | 2024 | 600 | Google Search | Periodic | [Paper]((https://aclanthology.org/2024.findings-acl.813/)) · [GitHub](https://github.com/freshllms/freshqa) |
+| **FreshQA** | 2024 | 600 | Google Search | Periodic | [Paper](https://aclanthology.org/2024.findings-acl.813/) · [GitHub](https://github.com/freshllms/freshqa) |
 
 </details>
 
