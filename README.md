@@ -29,7 +29,7 @@
 ---
 ### 📘 Overview
 
-This repository accompanies our paper  on *Temporal Question Answering (TQA)* — exploring how AI models reason about time, adapt to evolving knowledge, and answer temporally constrained questions.
+This repository provides a **comprehensive, curated collection** of research papers, datasets, methods, and resources focused on **Temporal Question Answering (TQA)** and **Temporal Information Retrieval (Temporal IR)**. It accompanies our survey paper on how AI models reason about time, adapt to evolving knowledge, answer temporally constrained questions, and retrieve time-sensitive information.
 
 <p align="center">
   <img src="images/TemporalSurveyFigure.png" alt="Temporal QA Taxonomy" width="700">
