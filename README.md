@@ -1,19 +1,36 @@
+<p align="center">
+  <img src="images/hourglass.png" width="120">
+</p>
+
 <h1 align="center">
-  <img src="images/hourglass.png" alt="Logo" width="55" style="vertical-align: middle; margin-right: 10px; position: relative; top: 8px;">
   It's High Time: A Survey of Temporal Question Answering
 </h1>
 
+<p align="center">
+  <a href="https://arxiv.org/abs/2505.20243v3">
+    <img src="https://img.shields.io/static/v1?label=Paper&message=arXiv&color=b31b1b&logo=arxiv">
+  </a>
+  <img src="https://img.shields.io/static/v1?label=ACL%202026&message=Accepted&color=gold">
+</p>
 
 <p align="center">
-  <strong>Bhawna Piryani</strong> · Abdelrahman Abdallah · Jamshid Mozafari · Avishek Anand · Adam Jatowt  
-  <br>
-  <em>University of Innsbruck · TU Delft</em>
-  <br><br>
-  📄 <a href="https://arxiv.org/abs/2505.20243v3">Read the Paper on arXiv</a> &nbsp;|&nbsp; 🗓️ <strong>2025</strong>
+  <a href="https://datascienceuibk.github.io/temporal-ir-qa-tutorial-www2026/">
+    <img src="https://img.shields.io/static/v1?label=WWW%202026&message=Tutorial&color=0A66C2&logo=google-chrome">
+  </a>
+  <a href="https://datascienceuibk.github.io/temporal-ir-extraction-tutorial-sigir2026/">
+    <img src="https://img.shields.io/static/v1?label=SIGIR%202026&message=Tutorial&color=8A2BE2&logo=google-chrome">
+  </a>
+</p>
+
+<p align="center">
+  <strong>⏳ Temporal Question Answering & Temporal Information Retrieval — A Comprehensive Survey in the Era of LLMs</strong>
 </p>
 
 ---
 
+<p align="center">
+  <img src="images/TemporalSurveyFigure.png" width="750">
+</p>
 
 ## 📋 Table of Contents
 
@@ -31,33 +48,56 @@
 
 This repository provides a **comprehensive, curated collection** of research papers, datasets, methods, and resources focused on **Temporal Question Answering (TQA)** and **Temporal Information Retrieval (Temporal IR)**. It accompanies our survey paper on how AI models reason about time, adapt to evolving knowledge, answer temporally constrained questions, and retrieve time-sensitive information.
 
-<p align="center">
-  <img src="images/TemporalSurveyFigure.png" alt="Temporal QA Taxonomy" width="700">
-</p>
-
 ---
-### Key Contributions
+## ✨ Key Contributions
 
-✨ **Comprehensive Survey**: Coverage of 27+ datasets, 50+ methods spanning 2003-2025  
-📊 **Unified Taxonomy**: Systematic categorization of tasks, datasets, and approaches  
-🔍 **Critical Analysis**: Evaluation of current capabilities and fundamental limitations  
-🚀 **Research Roadmap**: 7 critical directions for advancing temporal reasoning in AI
+- 📚 **Comprehensive Survey**  
+  Coverage of **27+ datasets** and **50+ methods** (2003–2025)
 
-### Why Temporal QA Matters
-Time shapes how we:
-- 🗞️ **Retrieve information**: "Latest climate policies" vs. "policies from the 1990s"
-- 🧠 **Reason about events**: Understanding causality, change, and evolution
-- 💬 **Interact with AI**: Expecting contextually appropriate temporal grounding
-- 🔄 **Adapt to change**: Handling evolving facts and knowledge updates
+- 🧭 **Unified Taxonomy**  
+  Structured view of datasets, tasks, and modeling approaches
+
+- 🧪 **Critical Analysis**  
+  Identifies key limitations in temporal reasoning and retrieval
+
+- 🚀 **Research Roadmap**  
+  Highlights **7 open challenges** for future work
+
+## ⏳ Why Temporal QA Matters
+
+Time fundamentally shapes how we interpret and retrieve information:
+
+- 🗞️ **Retrieval**  
+  "Latest climate policies" vs. "policies from the 1990s"
+
+- 🧠 **Reasoning**  
+  Understanding causality, evolution, and event ordering
+
+- 💬 **Interaction**  
+  Expecting temporally grounded responses from AI systems
+
+- 🔄 **Adaptation**  
+  Handling continuously evolving knowledge and facts
 
 ---
 
 ## 📊 Datasets
 
-### Quick Statistics
-- **27+ TQA Datasets** covering diverse domains and temporal scopes
-- **2.5M+ Questions** spanning historical archives (1367) to real-time web (2025)
-- **Dataset Categories**: Diachronic, Synchronic, Web-based, Synthetic, KG-based
+### 📌 Quick Statistics
+
+| Metric | Value |
+|------|------|
+| 📚 Total Datasets | 27+ |
+| ❓ Questions | 2.5M+ |
+| 📅 Time Span | 1367 → 2025 |
+| 🌍 Domains | News, Web, Knowledge Bases |
+
+### 🗂️ Dataset Categories
+- 🕰️ **Diachronic** — Longitudinal corpora over time  
+- 📸 **Synchronic** — Snapshot-based datasets  
+- 🌐 **Web-based** — Real-time evolving data  
+- ⚙️ **Synthetic** — Controlled evaluation  
+- 🧩 **KG-based** — Structured temporal reasoning  
 
 
 ### Featured Datasets
